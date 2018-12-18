@@ -4331,13 +4331,18 @@ li h3 {
 /* Officespace About page */
 .officespace_about  h1 {
     text-align: center;
+    margin-bottom: 0px;
 }
 .center {
     text-align: center;
 }
 .officespace_about .hero{
  background: url('https://www.officespace.com/assets/sections/pages/about/cityscape.png') 0 100% repeat-x;
- min-height: 65px;
+ min-height: 100px;
+}
+.officespace_about .section  {
+	margin-top: 0px!important;
+	margin-bottom: 0px!important;
 }
 .officespace_about .highlight2 h3, .officespace_about .highlight2 div {
 	display:inline-block;
