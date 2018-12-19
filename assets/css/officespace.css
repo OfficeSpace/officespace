@@ -1,0 +1,913 @@
+/******************* Customizations *****************/
+img.custom-logo {width: 200px}
+a.custom-logo-link {height: 38px}
+.site-branding {
+  padding: 1em 0;
+  -webkit-transition: none;
+  transition: none;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+li h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Officespace About page */
+.officespace_about  h1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+.center {
+    text-align: center;
+}
+.officespace_about .hero{
+ background: url('https://www.officespace.com/assets/sections/pages/about/cityscape.png') 0 100% repeat-x;
+ min-height: 100px;
+}
+.officespace_about .section  {
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+}
+.officespace_about .highlight2 h3, .officespace_about .highlight2 div {
+  display:inline-block;
+}
+
+.officespace_about h3{
+  color: #739803;
+}
+.officespace_about .section.highlight2 .action{
+  margin-left: 2%;
+  min-width: 135px;
+}
+.officespace_about .section.highlight2 .action a {
+    background: #c3c9a3;
+    color: white;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.2)!important;
+    text-decoration: none;
+    padding: 6% 5%;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.officespace_about .section.highlight2 {
+    background: #fff;
+    padding: 5% 0%;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.bignumber {
+    text-align: center;
+    color: #657689;
+    margin-bottom: 18px;
+    padding-top: 6px;
+}
+.bignumber .number {
+  font-family: 'Glegoo', serif;
+    font-size: 44px;
+    line-height: 105%;
+}
+.officespace_about .testimonial .quote {
+    margin-right: 32px;
+    padding: 34px 39px 31px 40px;
+    width: 100%;
+    max-width: calc(100% - 188px);
+    border: 1px solid #CCDAEC;
+    border-radius: 4px;
+    background: white;
+    position: relative;
+}
+
+.officespace_about .testimonial .quote:before{
+      border-left-color: #CCDAEC;
+    border-width: 19px;
+    margin-top: -19px;
+    left: 100%;
+    top: 40px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+    content: " ";
+    height: 0px;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.officespace_about .tenant-reps-recommend .testimonial {
+    display: flex;
+}
+.officspace_about blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+ul.photo-grid {
+    display: flex;
+    flex-flow: row wrap;
+    list-style:none;
+}
+
+ul.photo-grid li{
+  flex-basis: 32%;
+  margin-left: 1%;
+}
+
+.officespace_about .section:nth-child(even) {
+    background: #f1f6fc;
+    padding: 2% 1%;
+    border-top: solid 1px #efefef;
+    border-bottom: solid 1px #efefef;
+    border-radius: 4px;
+    margin: 4% 0%;
+}
+.officespace_about .three-column {
+  display: flex;
+  flex-flow: row wrap
+}
+.officespace_about .three-column > .col {
+  flex-basis: 33.333%
+
+}
+.officespace_about .three-column ul{
+  list-style: none;
+}
+
+/* FAQ page */
+.expand {
+  font-size: 20px;
+    font-weight: bold;
+    color: #425791;
+    margin-bottom: 20px;
+  cursor: pointer
+}
+.faq-menu a{
+  text-decoration: none;
+  margin-right:2%;
+}
+.faq-menu a:visited{
+  color: #7EAB3A;
+}
+/* Tenant guide styles */
+.tenant_guide .component.article-container-2 ol li a {
+    color: #7EAB3A;
+    text-decoration: none!important;
+}
+
+/* Burp landing page styles  */
+.burp_landing .tenant-connect .content {
+    display: flex;
+    flex-flow: row wrap;
+}
+.burp_landing .tenant-connect .content > * {
+    flex-basis: 49%;
+    margin-right: 1%;
+}
+.burp_landing .tenant-connect .content > div.copy {
+    padding-top: 8px;
+    padding-left: 24px;
+}
+.burp_landing .tenant-connect .content > div.copy h3 {
+    margin-bottom: 16px;
+    font-weight: lighter;
+    font-size: 28px;
+    color: black;
+}
+burp_landing ul.blue-bullets li {
+    font-size: 16px;
+    line-height: 28px;
+    list-style: none;
+}
+.burp_landing ul.blue-bullets {
+    margin-bottom: 16px;
+    padding-left: 2px;
+    display: block;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.burp_landing ul.blue-bullets li:before {
+    content: "\f111";
+    font-size: 14px;
+    font-family: FontAwesome;
+    color: #425791;
+    margin-right: 12px;
+    vertical-align: top;
+}
+.burp_landing .actions.learn-more {
+    margin-bottom: 16px;
+    padding-left: 2px;
+}
+.burp_landing .actions.learn-more a {
+    margin: auto;
+}
+
+.burp_landing .actions a {
+    background-position: 173px 16px;
+    background-size: 12px 16px;
+    background-repeat: no-repeat;
+    height: 51px;
+    width: 201px;
+    display: block;
+    padding-top: 13px;
+    background: #7EAB3A;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding-right: 17%;
+    position: relative;
+    text-align: right;
+}
+
+.burp_landing .actions a:after {
+    font-family: FontAwesome;
+    content: '\f105';
+    position: absolute;
+    right: 6%;
+}
+.centered{
+  text-align: center;
+}
+.burp_landing .tenant-connect h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: #425791;
+    letter-spacing: -0.6pt;
+}
+.burp_landing .section h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 24px;
+    text-align: center;
+    color: #425791;
+}
+.burp_landing .section:nth-child(even) {
+    background: #f1f6fc;
+    padding: 1%;
+    border-top: solid 1px #efefef;
+    border-bottom: solid 1px #efefef;
+    margin: 3% 0%;
+}
+.burp_landing .section.how-it-works {
+    padding-top: 30px;
+
+  height:1160px;
+}
+.burp_landing .section.how-it-works .content {
+    position: relative;
+}
+.burp_landing .section.how-it-works .content .container {
+    position: relative;
+    left: 128px;
+    width: 100%;
+    height: 100%;
+}
+.burp_landing .section.how-it-works .content .container.target-your-market {
+    top: 17px;
+}
+.burp_landing .section.how-it-works .content .container.target-your-market .copy {
+    top: 116.5px;
+    left: 1px;
+    position: absolute;
+  width: 304px;
+}
+.burp_landing .section.how-it-works .content .container.target-your-market .image.with-retina.ipad {
+    left: 263px;
+    position: absolute;
+    background-image: url(https://www.officespace.com/assets/sections/pages/burp_landing/ipad.png);
+    background-size: 565px 433px;
+    width: 565px;
+    height: 433px;
+}
+.burp_landing .leverage-our-traffic {
+    top: 278px;
+}
+.burp_landing .leverage-our-traffic .image.with-retina.iphone {
+    background-image: url(https://www.officespace.com/assets/sections/pages/burp_landing/iphone.png);
+    width: 403px;
+    height: 403px;
+    background-size: 403px 403px;
+    position: absolute;
+    left: -48px;
+}
+.burp_landing .leverage-our-traffic .copy {
+    top: 126px;
+    left: 352px;
+    position: absolute;
+    width: 352px;
+}
+.burp_landing h3 {
+    font-weight: lighter;
+    font-size: 28px;
+    color: black;
+}
+.burp_landing .watch-the-leads-roll-in {
+    position: relative;
+    left: 128px;
+    width: 100%;
+    height: 100%;
+    top: 652px;
+}
+.burp_landing .watch-the-leads-roll-in .copy {
+    position: absolute;
+    top: 71px;
+    left: 2px;
+    width: 304px;
+}
+.burp_landing .image.with-retina.desktop {
+    background-image: url(https://www.officespace.com/assets/sections/pages/burp_landing/desktop.png);
+    background-size: 375px 307px;
+    width: 375px;
+    height: 307px;
+    position: absolute;
+  left: 330px;
+}
+.burp_landing .how-it-works .call-to-action {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 1000px;
+}
+.burp_landing .how-it-works .call-to-action a {
+  text-align:center;
+}
+.burp_landing .pie_chart {
+    display: inline-block;
+    width: 50%;
+    min-width: 50%
+}
+.burp_landing .tenant-search .copy {
+    display: inline-block;
+    width: 48%;
+}
+.burp_landing .tenant-search > p {
+    float: right;
+}
+.tenant-search .copy ul li{
+  display:flex
+}
+.tenant-search .copy ul {
+    list-style: none;
+}
+.tenant-search .copy ul li div.content {
+    padding-left: 4%;
+    margin-bottom: 3%;
+}
+.tenant-search .bullet svg {
+    position: absolute;
+    top: 12px;
+}
+.container.tenant-search {
+    clear: both;
+    height: 260px
+}
+.leading-the-market {
+    height: 379px;
+    margin-bottom: 36px;
+    overflow: visible;
+}
+.leading-the-market .copy.left {
+    width: 416px;
+    float: left;
+}
+.leading-the-market .copy.left ul {
+    width: 390px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.leading-the-market .copy.left ul li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 46px;
+}
+.leading-the-market .copy.left ul li .bullet {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 48px;
+    width: 48px;
+    text-align: center;
+}
+.leading-the-market .copy.left ul .icon {
+    margin-top: 6px;
+}
+.leading-the-market .copy.left ul .image.with-retina.icon.magnifying-glass {
+    background-position: 0px 0px;
+}
+.leading-the-market .copy.left ul .image.with-retina.icon.magnifying-glass {
+    background-position: 0px 0px;
+    background-image: url(https://www.officespace.com/assets/sections/pages/burp_landing/sprite.png);
+    background-size: 272px 36px;
+    width: 36px;
+    height: 36px;
+}
+.leading-the-market .copy.left .image.with-retina.icon.first-place-ribbon {
+    background-position: -36px 0px;
+  background-image: url(https://www.officespace.com/assets/sections/pages/burp_landing/sprite.png);
+      background-size: 272px 36px;
+    width: 36px;
+    height: 36px;
+}
+.leading-the-market .copy.left .image.with-retina.icon.histogram-growth {
+    background-position: -72px 0px;
+    background-image: url(https://www.officespace.com/assets/sections/pages/burp_landing/sprite.png);
+    background-size: 272px 36px;
+    width: 36px;
+    height: 36px;
+    left: 0px;
+}
+.why-officespace .container .right {
+    float: right;
+}
+.leading-the-market #google-trends {
+    padding-left: 1px;
+    width: 435px;
+    height: 348px;
+    overflow: hidden;
+}
+.why-officespace .container.leads-are-valuable {
+    height: 300px;
+}
+.section.why-officespace .container.leads-are-valuable #these-guys-know-seo {
+    width: 349px;
+    padding-top: 6px;
+    padding-left: 2px;
+    color: #666666;
+  text-align: center;
+}
+.section.why-officespace .container #these-guys-know-seo{
+
+  float:left;
+}
+.section.why-officespace .container.leads-are-valuable #these-guys-know-seo .quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 9px;
+}
+.section.why-officespace .container .right {
+    width: 431px;
+}
+.leads-are-valuable .copy.right li {
+    list-style: none;
+    padding-left: 46px;
+}
+.leads-are-valuable .pie_chart_partial svg {
+    position: absolute;
+    left: -25px;
+    top: 26px;
+}
+.leads-are-valuable h3 {
+    margin-bottom: 0px;
+}
+.content.narrow {
+    margin-right: 48px;
+    margin-left: 48px;
+}
+.burp_landing .section .content p {
+    line-height: 28px;
+}
+.burp_landing .contact-us {
+    margin-top: 26px;
+}
+.burp_landing .email-us {
+    width: 58%;
+}
+.tenantroster h1{
+  font-size:45px;
+  color: #425491;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Tenant Roster Page */
+.tenantroster .features ul li {
+    list-style: none;
+    display: flex;
+}
+i.icon-check::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-right: 1%;
+    color: #bbd17d;
+}
+i.icon-check {
+    margin-right: 2%;
+}
+.tenantroster .screenshot {
+    margin: 20px 16px 0px 60px;
+    float: left;
+    width: 450px;
+    height: 400px;
+}
+.tenantroster .tagline {
+    color: #999999;
+    text-align: center;
+    margin: 0 100px;
+    padding: 0;
+    margin-bottom: 4%;
+}
+.tenantroster .call-to-action {
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 9px;
+    text-align: center;
+}
+.tenantroster .call-to-action a, .brokertools .call-to-action a {
+      -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    -ms-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 23px;
+    font-weight: bold;
+    background-color: #95B047;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#95B047), to(#87A239));
+    background-image: -webkit-linear-gradient(top, #95B047, #87A239);
+    background-image: -moz-linear-gradient(top, #95B047, #87A239);
+    background-image: -ms-linear-gradient(top, #95B047, #87A239);
+    background-image: -o-linear-gradient(top, #95B047, #87A239);
+    background-image: linear-gradient(top, #95B047, #87A239);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 0px 0 #7B9337;
+    -moz-box-shadow: 0px 1px 0px 0 #7B9337;
+    -ms-box-shadow: 0px 1px 0px 0 #7B9337;
+    -o-box-shadow: 0px 1px 0px 0 #7B9337;
+    box-shadow: 0px 1px 0px 0 #7B9337;
+    text-rendering: optimizeLegibility;
+    border: 1px solid #7B9337;
+    color: white;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-decoration: none;
+}
+.sales-container  .details{
+  clear: both;
+    overflow: hidden;
+    margin: 30px;
+    padding: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+.sales-container .details .left table {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    font-size: 30px;
+    width: 470px;
+    text-shadow: 0 1px 0 #fff;
+    color: #584949;
+}
+.sales-container .details .left td {
+    background: #f0f0f0;
+    border-top: 4px solid white;
+    padding: 20px;
+}
+.sales-container  .details .left td.amount {
+    padding-right: 0;
+}
+.sales-container .details .left .sign {
+    font-size: 20px;
+    position: relative;
+    top: -17px;
+    left: 4px;
+    color: #425791;
+}
+.sales-container  .details .left .dollars {
+    font-size: 50px;
+    color: #425791;
+}
+.sales-container  .details .left .footnote {
+    font-size: 23px;
+    position: relative;
+    top: -13px;
+    left: 0px;
+    color: #9ba9d1;
+}
+.sales-container  .details .left .term {
+    font-size: 16px;
+    position: relative;
+    left: -16px;
+    color: #9ba9d1;
+}
+.sales-container  .details .left td.quota {
+    padding-left: 10px;
+}
+.details .left .quantity {
+    font-size: 20px;
+    color: #746161;
+    font-style: italic;
+}
+.sales-container  .details .right {
+    float: left;
+    margin-left: 20px;
+    width: 250px;
+}
+.sales-container  .details .right ul li {
+  list-style: none;
+}
+.sales-container  .details .left {
+    float: left;
+    margin-left: 20px;
+    width: 500px;
+}
+
+/*** broker tools ***/
+.brokertools li {
+    list-style: none;
+}
+.brokertools .features h1 {
+    text-align: center;
+}
+.brokertools .call-to-action {
+  text-align: center;
+  margin-bottom: 2%;
+}
+.brokertools .flex_display {
+  display: flex;
+}
+.brokertools .flex_display > * {
+  flex-basis: 50%;
+}
+.brokertools .flex_display > div:first-child > ul > li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-right: 1%;
+    color: #bbd17d;
+}
+.brokertools .video, .brokertools .middle{
+  text-align: center;
+}
+
+.brokertools .video {
+    background: #f1f6fc;
+    padding: 9%;
+    border-top: solid 1px #efefef;
+    border-bottom: solid 1px #efefef;
+    margin: 3% 0%;
+}
+.brokertools .bottom .main ul li {
+  display: flex;
+}
+.brokertools .bottom .main ul li > .details {
+    flex-grow: 14;
+}
+.brokertools .bottom .main ul li > .image {
+    flex-grow: 1;
+}
+.brokertools .bottom .main ul li > * {
+    flex-basis: 250px;
+}
+
+/**** featured listings ****/
+.featuredlistings .sales-container h1 {
+    font-size: 31px;
+    color: #425791;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-shadow: 0 1px rgba(255,255,255,0.95);
+    clear: both;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.sales-container .tagline {
+    color: #999999;
+    text-align: center;
+    margin: 0 100px;
+    padding: 0;
+    font-size: 15px;
+    line-height: 160%;
+}
+.featuredlistings .screenshot-container {
+    float: left;
+    position: relative;
+}
+.featuredlistings .image.with-retina.feat-building-page {
+    background-image: url("https://www.officespace.com/assets/sections/pages/featuredlistings/feat-building-page@2x.png");
+    background-size: 543px 400px;
+    height: 400px;
+    width: 543px;
+    background-repeat: no-repeat;
+}
+.featuredlistings .sales-container .features {
+    float: right;
+    padding-left: 0;
+    color: #666;
+    width: 357px;
+    padding: 40px;
+}
+.sales-container p {
+    font-size: 16px;
+    line-height: 160%;
+}
+.article-container p {
+    margin-bottom: 20px;
+}
+.component.sales-container .features ul {
+    padding: 0px 0px;
+}
+.featuredlistings .sales-container .features ul li {
+    font-size: 16px;
+}
+.sales-container .features ul li {
+    overflow: hidden;
+    *zoom: 1;
+    margin-bottom: 15px;
+    line-height: 130%;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.article-container ul li {
+    list-style-position: outside;
+}
+li {
+    list-style: none;
+}
+.featuredlistings .call-to-action {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+}
+.component.sales-container .call-to-action a {
+     -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    -ms-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 23px;
+    font-weight: bold;
+    background-color: #95B047;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#95B047), to(#87A239));
+    background-image: -webkit-linear-gradient(top, #95B047, #87A239);
+    background-image: -moz-linear-gradient(top, #95B047, #87A239);
+    background-image: -ms-linear-gradient(top, #95B047, #87A239);
+    background-image: -o-linear-gradient(top, #95B047, #87A239);
+    background-image: linear-gradient(top, #95B047, #87A239);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 0px 0 #7B9337;
+    -moz-box-shadow: 0px 1px 0px 0 #7B9337;
+    -ms-box-shadow: 0px 1px 0px 0 #7B9337;
+    -o-box-shadow: 0px 1px 0px 0 #7B9337;
+    box-shadow: 0px 1px 0px 0 #7B9337;
+    text-rendering: optimizeLegibility;
+    border: 1px solid #7B9337;
+    color: white;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-decoration: none;
+}
+.sales-container .features ul i.icon-check {
+    float: left;
+    padding-right: 10px;
+    padding-top: 2px;
+    display: inline-block;
+    color: #bbd17d;
+}
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+.sales-container .features ul p {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 240px;
+}
+.featuredlistings .details {
+    margin: 0 30px;
+}
+.sales-container .details {
+    clear: both;
+    overflow: hidden;
+    *zoom: 1;
+    margin: 30px;
+    padding: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #e9e9e9;
+}
+.featuredlistings .placements h2 {
+    padding: 20px 50px;
+}
+.component.article-container h2 {
+    margin-bottom: 20px;
+    clear: both;
+}
+.component.article-container h2{
+    color: #425791;
+    font-size: 19px;
+    font-weight: 300;
+}
+h2{
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.featuredlistings .placements {
+    border-top: 1px solid #e9e9e9;
+    /* margin: 0 30px; */
+    clear: left;
+    line-height: 150%;
+}
+.featuredlistings .image.with-retina.feat-placement {
+    background-image: url('https://www.officespace.com/assets/sections/pages/featuredlistings/feat-placement@2x.png');
+    background-size: 642px 1178px;
+    height: 1178px;
+    width: 642px;
+    background-repeat
+}
+/*** membership page ****/
+.component.sales-container h1 {
+    color: #425791;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.95);
+}
+.component.sales-container .features {
+    float: left;
+    width: 370px;
+    padding: 40px;
+}
+.component.sales-container .screenshot {
+    float: left;
+    width: 450px;
+    margin: 20px 0 0 20px;
+}
+.component.sales-container .call-to-action {
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px;
+}
+.component.sales-container a {
+    color: #4866B6;
+}
+.component.sales-container blockquote {
+    font-size: 16px;
+    line-height: 150%;
+    font-style: italic;
+    color: #966;
+}
+.component.sales-container .its-free-no-really-it-is-seriously-guys {
+    font-weight: bold;
+    color: #4866B6;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
