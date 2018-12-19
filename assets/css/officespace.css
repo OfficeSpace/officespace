@@ -911,3 +911,45 @@ h2{
     text-align: center;
     margin-top: 20px;
 }
+
+/**  menu ****/
+nav#site-navigation ul.menu .right-side {
+    float: right;
+}
+.logo img {
+    width: 16.1rem;
+}
+nav#site-navigation ul#top-menu>li > a {
+    color: #666666;
+    font-size: 1.0rem;
+    font-weight: 300;
+    outline: none;
+    display: block;
+    height: 2.3rem;
+    line-height: 1.3rem;
+    border-right: 1px solid #ddd;
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+a.custom-logo-link img {
+    max-width: 177px;
+    float: left;
+}
+a.custom-logo-link{
+    float: left;
+}
+.navigation-top{
+    border: none!important;
+}
+div#content{
+    background: #f2f2f2;
+}
+.wrap{
+    background: #ffffff;
+    padding: 1%;
+    border-radius: 3px;
+    margin-bottom: 2%;
+}
+.site-navigation-fixed.navigation-top{
+    height: 62px;
+}

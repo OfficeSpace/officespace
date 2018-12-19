@@ -15,7 +15,7 @@
  * @version 1.0
  */
 
-get_header(); ?>
+get_header();?>
 
 <div class="wrap">
 	<?php if ( is_home() && ! is_front_page() ) : ?>

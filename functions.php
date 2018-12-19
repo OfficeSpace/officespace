@@ -18,6 +18,8 @@ foreach( $include_array as $file ){
 function officespace_add_js(){
   wp_enqueue_script( 'officespace_accordion', get_stylesheet_directory_uri().'/assets/js/accordion.js', ['jquery'] );
   wp_enqueue_script( 'officespace_pie_icon', get_stylesheet_directory_uri().'/assets/js/pie_icon_make.js', ['jquery'] );
+  wp_enqueue_script( 'officespace_js_cookie', 'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js', ['jquery']);
+  wp_enqueue_script( 'officespace_nav_hider', get_stylesheet_directory_uri().'/assets/js/hide_navigation_items.js', ['jquery','officespace_js_cookie'] );
 }
 
 add_action('wp_enqueue_scripts', 'officespace_add_js');
@@ -53,6 +55,55 @@ function add_officespace_logo($html){
 	return $html;
 }
 add_filter( 'get_custom_logo', 'add_officespace_logo');
+
+/*
+	Add body classes for templates that need it
+*/
+
+function officespace_add_body_class($classes){
+	if( get_page_template_slug( ) == 'template-mock_home_page.php' ) {
+		$classes = explode(' ','home blog logged-in admin-bar group-blog hfeed has-header-image has-sidebar colors-light customize-support page-one-column mock_home_page');
+	}
+
+	return $classes;
+}
+add_filter('body_class', 'officespace_add_body_class',10);
+
+/*
+	This adds a rewrite rule if a page is set with the mock home page template
+*/
+function officespace_add_pages_rewrite(){
+	$page_id = false;
+
+	$args = array(
+	    'post_type' => 'page',
+	    'posts_per_page' => -1,
+	    'meta_query' => array(
+	        array(
+	            'key' => '_wp_page_template',
+	            'value' => 'template-mock_home_page.php'
+	        )
+	    )
+	);
+	$the_pages = new WP_Query( $args );
+
+	if($the_pages->have_posts()){
+
+		while($the_pages->have_posts()) {
+			$the_pages->the_post();
+			$page_id = get_the_ID();
+		}
+	}
+
+	//make rewrite rule if id found
+	if($page_id){
+
+		// add_rewrite_rule( 'weblog/?$', 'index.php?page_id='.$page_id, 'top' );
+		// add_rewrite_rule( 'weblog/([a-z0-9]+)/?', 'index.php?name=$matches[1]','top' );
+	}
+}
+// add_action('init', 'officespace_add_pages_rewrite');
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
