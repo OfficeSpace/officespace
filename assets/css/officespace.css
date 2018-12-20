@@ -948,7 +948,7 @@ div#content{
     background: #ffffff;
     padding: 1%;
     border-radius: 3px;
-    margin-bottom: 2%;
+    margin-bottom: 0;
 }
 .site-navigation-fixed.navigation-top{
     height: 62px;
@@ -956,4 +956,137 @@ div#content{
 nav#site-navigation ul#top-menu>li.right-side > a {
     border: none;
     color: #4866B6;
+}
+/*** concierge page ***/
+.concierge h1 {
+    text-align: center;
+    font-size: 26px;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.concierge h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.concierge h2.sub {
+    color: #ccc;
+    margin: 0;
+    font-size: 14px;
+}
+.concierge .hero {
+    overflow: hidden;
+    *zoom: 1;
+    background: #ccc;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background: url(//d2apc0nnfc3jtp.cloudfront.net/assets/sections/pages/bell-bfd395b….jpg) no-repeat top left;
+    width: 960px;
+    left: -40px;
+    position: relative;
+}
+.concierge .hero img.quote {
+    position: relative;
+    top: 18px;
+}
+.concierge .hero .steps {
+    float: left;
+    width: 400px;
+    margin-top: 310px;
+    margin-left: 70px;
+}
+.concierge .hero .steps p {
+    margin-bottom: 20px;
+    display: block;
+    float: left;
+}
+.concierge .hero .steps img {
+    float: left;
+    display: block;
+    width: 39px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.concierge .hero .form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    padding-bottom: 40px;
+    background: white;
+    margin: 20px;
+    margin-right: 40px;
+    float: right;
+    width: 330px;
+    min-height: 450px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+}
+.concierge .main {
+    overflow: hidden;
+    *zoom: 1;
+}
+.concierge .main .copy {
+    background: #999;
+    background: #eef5f8;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    *zoom: 1;
+    background: url(https://d2apc0nnfc3jtp.cloudfront.net/assets/sections/pages/linen-6572687….png);
+}
+.concierge .main .copy p {
+    clear: left;
+}
+/**** footer ****/
+.component.page-footer {
+    color: #999999;
+    font-size: 14px;
+    max-width: calc(968px - 30px);
+    min-width: calc(320px - 30px);
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.component.page-footer .copyright {
+    padding: 15px 0;
+}
+.component.page-footer .navigation {
+    display: flex;
+}
+.component.page-footer .navigation>div {
+    text-align: right;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin: 15px 8px;
+    margin-bottom: 20px;
+}
+.component.page-footer .navigation>div:last-child {
+    margin-right: none;
+}
+.component.page-footer a {
+    color: #999999;
+    font-size: 14px;
+}
+.site-footer{
+    margin-top: 0!important;
+    background: #f2f2f2;
+    border-top: none!important;
+}
+.site-footer .wrap{
+    background: #f2f2f2;
+    padding-top: 0!important;
 }
