@@ -98,11 +98,10 @@ function officespace_add_pages_rewrite(){
 	//make rewrite rule if id found
 	if($page_id){
 
-		// add_rewrite_rule( 'weblog/?$', 'index.php?page_id='.$page_id, 'top' );
-		// add_rewrite_rule( 'weblog/([a-z0-9]+)/?', 'index.php?name=$matches[1]','top' );
+		add_rewrite_rule( 'blog/?$', 'index.php?page_id='.$page_id, 'top' );
 	}
 }
-// add_action('init', 'officespace_add_pages_rewrite');
+add_action('init', 'officespace_add_pages_rewrite');
 
 
 /**
