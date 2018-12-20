@@ -8,5 +8,10 @@
     }
 
     $(hide_class).hide();
+    //hide arrow all children of this menu item are hidden
+    var parent_li = $(hide_class).parent('ul.sub-menu').parent('li');
+    parent_li.find('svg').hide();
+    //now hide before element that will appear when hovered
+    $('html > head').append($('<style>li#' +parent_li.attr('id') + ':before { display:none; }</style>'));
   });
 })(jQuery)
