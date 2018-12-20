@@ -953,3 +953,7 @@ div#content{
 .site-navigation-fixed.navigation-top{
     height: 62px;
 }
+nav#site-navigation ul#top-menu>li.right-side > a {
+    border: none;
+    color: #4866B6;
+}
