@@ -20,7 +20,8 @@ get_header();?>
     <main id="main" class="site-main" role="main">
       <?php
       // the query
-      $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1));
+      $paged = (get_query_var( 'pg' ))? absint( get_query_var('pg') ) : 1;
+      $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>10, 'paged'=> $paged));
 
       if ( $wpb_all_query->have_posts() ) :
 
@@ -36,11 +37,19 @@ get_header();?>
 
         endwhile;
 
-        the_posts_pagination( array(
+        echo paginate_links( array(
+          'format' => '?pg=%#%',
+          'prev_next' => true,
           'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
           'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-          'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+          'current' => $paged,
+          'total' => $wpb_all_query->max_num_pages
         ) );
+        // the_posts_pagination( array(
+        //   'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
+        //   'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+        //   'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+        // ) );
 
       else :
 

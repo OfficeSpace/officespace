@@ -592,6 +592,12 @@ function twentyseventeen_header_image_tag( $html, $header, $attr ) {
 }
 add_filter( 'get_header_image_tag', 'twentyseventeen_header_image_tag', 10, 3 );
 
+function add_blog_type_query_var(){
+	global $wp;
+    $wp->add_query_var( 'pg' );
+}
+
+add_filter( 'init', 'add_blog_type_query_var' );
 /**
  * Add custom image sizes attribute to enhance responsive image functionality
  * for post thumbnails.

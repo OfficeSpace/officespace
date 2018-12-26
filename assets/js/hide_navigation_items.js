@@ -12,6 +12,7 @@
     var parent_li = $(hide_class).parent('ul.sub-menu').parent('li');
     parent_li.find('svg').hide();
     //now hide before element that will appear when hovered
-    $('html > head').append($('<style>li#' +parent_li.attr('id') + ':before { display:none; }</style>'));
+    $('html > head').append($('<style>li#' +parent_li.attr('id') + ':before { display:none; } '+
+                              ' li#'+ parent_li.attr('id') +':hover:after { display:none; }</style>'));
   });
 })(jQuery)
