@@ -93,13 +93,6 @@
 			// The margin should be applied to different elements on front-page or home vs interior pages.
 			if ( isFrontPage ) {
 				$branding.css( 'margin-bottom', navigationOuterHeight );
-
-				if( $('#wpadminbar').length === 0 ){
-					//have top rendered after another piece of code is pushing it down.
-					setTimeout(function(){
-						$navigation.css('top', '0');
-					},1000);
-				}
 			} else {
 				$customHeader.css( 'margin-bottom', navigationOuterHeight );
 			}
