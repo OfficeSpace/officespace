@@ -947,7 +947,7 @@ nav#site-navigation ul.menu .right-side {
     padding-right: 0!important;
     margin-right: 0!important;
 }
-nav#site-navigation ul.menu .right-side a{
+nav#site-navigation ul.menu .right-side a:not(:first-child){
     padding-right: 0!important;
     margin-right: 0!important;
 }
