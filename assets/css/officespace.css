@@ -163,12 +163,18 @@ ul.photo-grid li{
     color: #7EAB3A;
     text-decoration: underline;
 }
+#faq h1 {
+    text-align: center;
+}
 .faq-menu{
     background: none!important;
     padding: 0!important;
 }
 .faq-menu a:visited{
   color: #7EAB3A;
+}
+#faq .article-container-2 .hero img {
+    width: 72px;
 }
 /* Tenant guide styles */
 .tenant_guide .component.article-container-2 ol li a {
