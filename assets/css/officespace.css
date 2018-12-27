@@ -156,6 +156,16 @@ ul.photo-grid li{
 .faq-menu a{
   text-decoration: none;
   margin-right:2%;
+  color: #41598F;
+ padding: 6px 10px;
+}
+.faq-menu a:hover{
+    color: #7EAB3A;
+    text-decoration: underline;
+}
+.faq-menu{
+    background: none!important;
+    padding: 0!important;
 }
 .faq-menu a:visited{
   color: #7EAB3A;

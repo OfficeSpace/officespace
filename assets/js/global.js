@@ -193,7 +193,12 @@
 
 			var search = $(this).find('input[name="search"]').val();
 			window.location.replace('/blog/search/'+encodeURI(search.trim())+'/');
-		})
+		});
+
+		//move faq menu
+		if($('#faq-menu').length != 0){
+			$('#faq-menu').detach().prependTo('.site-content-contain #content');
+		}
 
 		// If navigation menu is present on page, setNavProps and adjustScrollClass.
 		if ( $navigation.length ) {
