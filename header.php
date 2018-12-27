@@ -51,6 +51,10 @@
 		echo '</div><!-- .single-featured-image-header -->';
 	endif;
 	?>
-
+	<div class="logout_form">
+		<form id="logout_form" action="/users/sign_out" method="post">
+			<input type="hidden" name="_method" value="delete" />
+		</form>
+	</div>
 	<div class="site-content-contain">
 		<div id="content" class="site-content">

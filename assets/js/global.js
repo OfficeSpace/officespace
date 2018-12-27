@@ -179,6 +179,11 @@
 	// Fire on document ready.
 	$( document ).ready( function() {
 
+		$(document).on('click', 'li.log_out a', function(e){
+			e.preventDefault();
+			$('#logout_form').submit();
+		})
+
 		// If navigation menu is present on page, setNavProps and adjustScrollClass.
 		if ( $navigation.length ) {
 			setNavProps();
