@@ -73,8 +73,25 @@ add_filter('body_class', 'officespace_add_body_class',10);
 	This adds a rewrite rule if a page is set with the mock home page template
 */
 function officespace_add_pages_rewrite(){
-	$page_id = false;
+	$page_id = get_template_page_id('home_page');
+	$search_id = get_template_page_id('search');
 
+	//make rewrite rule if id found
+	if($search_id){
+		add_rewrite_rule( 'blog/search/(.*)/?', 'index.php?page_id='.$search_id.'&search=$matches[1]', 'top' );
+	}
+
+	if($page_id){
+
+		add_rewrite_rule( 'blog/?$', 'index.php?page_id='.$page_id, 'top' );
+	}
+
+}
+add_action('init', 'officespace_add_pages_rewrite');
+
+
+function get_template_page_id($type = 'home_page'){
+	$page_id = false;
 	$args = array(
 	    'post_type' => 'page',
 	    'posts_per_page' => -1,
@@ -85,24 +102,32 @@ function officespace_add_pages_rewrite(){
 	        )
 	    )
 	);
+
+	switch($type){
+		case 'search':
+			$args['meta_query'][0]['value'] = 'searchpage.php';
+			break;
+	}
+
 	$the_pages = new WP_Query( $args );
 
-	if($the_pages->have_posts()){
-
-		while($the_pages->have_posts()) {
-			$the_pages->the_post();
-			$page_id = get_the_ID();
-		}
+	while($the_pages->have_posts()) {
+		$the_pages->the_post();
+		$page_id = get_the_ID();
 	}
 
-	//make rewrite rule if id found
-	if($page_id){
+	return $page_id;
 
-		add_rewrite_rule( 'blog/?$', 'index.php?page_id='.$page_id, 'top' );
-	}
 }
-add_action('init', 'officespace_add_pages_rewrite');
 
+//query vars
+function add_blog_type_query_var(){
+	global $wp;
+    $wp->add_query_var( 'pg' );
+    $wp->add_query_var('search');
+}
+
+add_filter( 'init', 'add_blog_type_query_var' );
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -592,12 +617,6 @@ function twentyseventeen_header_image_tag( $html, $header, $attr ) {
 }
 add_filter( 'get_header_image_tag', 'twentyseventeen_header_image_tag', 10, 3 );
 
-function add_blog_type_query_var(){
-	global $wp;
-    $wp->add_query_var( 'pg' );
-}
-
-add_filter( 'init', 'add_blog_type_query_var' );
 /**
  * Add custom image sizes attribute to enhance responsive image functionality
  * for post thumbnails.

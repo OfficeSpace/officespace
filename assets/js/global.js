@@ -182,6 +182,17 @@
 		$(document).on('click', 'li.log_out a', function(e){
 			e.preventDefault();
 			$('#logout_form').submit();
+		});
+
+		//change search-form action
+		$('.search-form').attr('action', '/blog/search');
+
+		//control search form submission
+		$(document).on('submit', '.search-form', function(e){
+			e.preventDefault();
+
+			var search = $(this).find('input[name="search"]').val();
+			window.location.replace('/blog/search/'+encodeURI(search.trim())+'/');
 		})
 
 		// If navigation menu is present on page, setNavProps and adjustScrollClass.
