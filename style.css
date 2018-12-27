@@ -1548,6 +1548,8 @@ body {
 
 #masthead .wrap {
 	position: relative;
+	padding-left: 0em!important;
+ 	padding-right: 0em!important;
 }
 
 .site-header {
@@ -3517,7 +3519,8 @@ p > object:only-child {
 	}
 
 	.main-navigation a {
-		padding: 1em 1.25em;
+		padding: 1em 0em;
+		margin-right: 1.25em;
 	}
 
 	.main-navigation ul ul {
@@ -4311,5 +4314,9 @@ p > object:only-child {
 
 .logout_form {
 	display: none;
+}
+
+.collapse:not(.open){
+	display:none;
 }
 

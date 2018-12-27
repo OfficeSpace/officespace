@@ -915,6 +915,12 @@ h2{
 /**  menu ****/
 nav#site-navigation ul.menu .right-side {
     float: right;
+    padding-right: 0!important;
+    margin-right: 0!important;
+}
+nav#site-navigation ul.menu .right-side a{
+    padding-right: 0!important;
+    margin-right: 0!important;
 }
 .logo img {
     width: 16.1rem;
