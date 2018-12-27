@@ -61,7 +61,7 @@ add_filter( 'get_custom_logo', 'add_officespace_logo');
 */
 
 function officespace_add_body_class($classes){
-	if( get_page_template_slug( ) == 'template-mock_home_page.php' ) {
+	if( get_page_template_slug( ) == 'template-mock_home_page.php' || is_search()) {
 		$classes = explode(' ','home blog logged-in admin-bar group-blog hfeed has-header-image has-sidebar colors-light customize-support page-one-column mock_home_page');
 	}
 
