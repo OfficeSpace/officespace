@@ -157,11 +157,11 @@ ul.photo-grid li{
   text-decoration: none;
   margin-right:2%;
 }
-.faq-menu a, .back-to-top{
+.faq-menu a, .back-to-top, .clip a{
   color: #41598F;
  padding: 6px 10px;
 }
-.faq-menu a:hover, .back-to-top:hover{
+.faq-menu a:hover, .back-to-top:hover, .clip a:hover{
     color: #7EAB3A;
     text-decoration: underline;
 }
