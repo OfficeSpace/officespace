@@ -1130,4 +1130,9 @@ nav#site-navigation ul#top-menu>li.right-side > a {
     height: 300px;
     display: block;
     margin: 0 auto;
+    width:auto;
+}
+
+.photo-grid .description-contents {
+    padding: 4px 2.3em;
 }
