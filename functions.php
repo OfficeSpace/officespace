@@ -48,7 +48,7 @@ function add_officespace_logo($html){
 
 	if(empty($logo_id)) {
 		$html = sprintf( '<a href="%1$s" class="custom-logo-link" rel="home" itemprop="url"><img class="custom-logo" src="%2$s"/></a>',
-			esc_url( home_url( '/blog' ) ),
+			esc_url( home_url( '/' ) ),
 			get_stylesheet_directory_uri().'/assets/images/officespacelogo.png'
 		);
 	}
