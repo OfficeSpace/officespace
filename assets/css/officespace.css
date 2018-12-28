@@ -1125,3 +1125,9 @@ nav#site-navigation ul#top-menu>li.right-side > a {
     background: #f2f2f2;
     padding-top: 0!important;
 }
+
+.photo-container img {
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
