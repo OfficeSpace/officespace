@@ -144,7 +144,23 @@ ul.photo-grid li{
 .officespace_about .three-column ul{
   list-style: none;
 }
-
+.officespace_about .image.with-retina.brokerpic.augustin {
+    background-image: url(https://www.officespace.com/assets/sections/pages/burp_landing/brokerpic-augustin.png);
+}
+.officespace_about .image.with-retina.brokerpic {
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+}
+.officespace_about .image.with-retina.brokerpic.sale {
+    background-image: url(https://www.officespace.com/assets/sections/pages/burp_landing/brokerpic-sale.png);
+}
+.officespace_about .image.with-retina.brokerpic.mccarte {
+    background-image: url(https://www.officespace.com//assets/sections/pages/burp_landing/brokerpic-mccarte.png);
+}
+.officespace_about .testimonial{
+    margin-bottom: 1.3%;
+}
 /* FAQ page */
 .expand {
   font-size: 20px;
@@ -1197,4 +1213,5 @@ nav#site-navigation ul#top-menu>li.right-side > a {
 .photo-grid .description-contents {
     padding: 4px 2.3em;
 }
+
 
