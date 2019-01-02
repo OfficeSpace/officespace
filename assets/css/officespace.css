@@ -161,6 +161,34 @@ ul.photo-grid li{
 .officespace_about .testimonial{
     margin-bottom: 1.3%;
 }
+.officespace_about blockquote:before {
+    content: '\201C';
+    padding-right: 6px;
+}
+.officespace_about blockquote{
+    margin: 0;
+    padding: 0;
+}
+.officespace_about blockquote:after, .officespace_about blockquote:before {
+    color: #aaa;
+    font-family: Times New Roman, Times, serif;
+    font-size: 30px;
+    line-height: 10px;
+    position: relative;
+    top: 4px;
+}
+.officespace_about blockquote:after {
+    content: '\201D';
+    padding-left: 6px;
+}
+.officespace_about blockquote, .officespace_about blockquote p {
+    display: inline;
+}
+.officespace_about .broker {
+    color: #929ba2;
+    font-size: 80%;
+    line-height: 24px;
+}
 /* FAQ page */
 .expand {
   font-size: 20px;
