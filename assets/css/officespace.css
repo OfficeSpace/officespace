@@ -659,6 +659,22 @@ i.icon-check::before {
 i.icon-check {
     margin-right: 2%;
 }
+i.chevron-right {
+    font-family: "FontAwesome";
+    color: #ccc;
+}
+i.chevron-right:before {
+    content: "\f054";
+}
+.tenantroster .fine-print{
+    border-top: 1px solid #e9e9e9;
+    margin: 0 30px;
+    padding: 20px 30px;
+    clear: left;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #666;}
 .tenantroster .screenshot {
     margin: 20px 16px 0px 60px;
     float: left;
