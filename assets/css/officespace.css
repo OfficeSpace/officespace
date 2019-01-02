@@ -189,6 +189,11 @@ ul.photo-grid li{
     font-size: 80%;
     line-height: 24px;
 }
+.officespace_about .three-column a{
+    color: rgb(0, 0, 238);
+    text-decoration: none;
+    font-size: 90%;
+}
 /* FAQ page */
 .expand {
   font-size: 20px;
