@@ -231,6 +231,25 @@ ul.photo-grid li{
     margin-left: 20px;
     line-height: 18px;
 }
+#faq .component.article-container-2 .hero {
+    text-align: center;
+}
+#faq #attributions h1 {
+    margin-top: 0px;
+    padding-top: 0;
+}
+#faq .hero {
+    padding: 30px;
+}
+#faq #attributions .hero p {
+    margin-bottom: 0;
+}
+#faq #attributions .hero p {
+    text-align: center;
+}
+#faq .attributions p{
+    text-align: center;
+}
 /* Tenant guide styles */
 .tenant_guide .component.article-container-2 ol li a {
     color: #7EAB3A;
