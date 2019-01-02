@@ -153,17 +153,7 @@ ul.photo-grid li{
     margin-bottom: 20px;
   cursor: pointer
 }
-#faq .component.article-container {
-    -webkit-box-shadow: 0px 6px 6px 0 #e0e0e0;
-    -moz-box-shadow: 0px 6px 6px 0 #e0e0e0;
-    -ms-box-shadow: 0px 6px 6px 0 #e0e0e0;
-    -o-box-shadow: 0px 6px 6px 0 #e0e0e0;
-    box-shadow: 0px 6px 6px 0 #e0e0e0;
-    border: 1px solid #d8d8d8;
-    background: white;
-    position: relative;
-    padding: 40px;
-}
+
 .faq-menu a{
   text-decoration: none;
   margin-right:2%;
@@ -188,6 +178,58 @@ ul.photo-grid li{
 }
 #faq .article-container-2 .hero img {
     width: 72px;
+}
+#faq .component.article-container, #faq .component.article-container-2{
+    background:#ffffff;
+    padding-left: 1em;
+    padding-right: 1em;
+    -webkit-box-shadow: 0px 6px 6px 0 #e0e0e0;
+    -moz-box-shadow: 0px 6px 6px 0 #e0e0e0;
+    -ms-box-shadow: 0px 6px 6px 0 #e0e0e0;
+    -o-box-shadow: 0px 6px 6px 0 #e0e0e0;
+    box-shadow: 0px 6px 6px 0 #e0e0e0;
+    border: 1px solid #d8d8d8;
+    background: white;
+    position: relative;
+    padding: 40px;
+}
+#faq .contact-left{
+    float: left;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(102, 102, 102);
+    font-weight: 400;
+}
+#faq #contact_info {
+   display:flex;
+}
+#faq #contact_info > div {
+    padding-right: 2em;
+}
+
+#faq .contact-left .addresses ul li {
+    list-style-type: none !important;
+    margin-left: 0 !important;
+}
+#faq .contact-left .addresses ul li .title-strong {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#faq .article-container.contact .contact-left .addresses {
+    padding: 10px;
+    margin-left: 15px;
+}
+#faq .article-container.contact .contact-left .highlight {
+    background: #f1f6fc;
+}
+#faq .component.article-container ul a {
+    color: #4866B6;
+}
+#faq .component.article-container ul li {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 0px;
+    margin-left: 20px;
+    line-height: 18px;
 }
 /* Tenant guide styles */
 .tenant_guide .component.article-container-2 ol li a {
@@ -1136,3 +1178,4 @@ nav#site-navigation ul#top-menu>li.right-side > a {
 .photo-grid .description-contents {
     padding: 4px 2.3em;
 }
+

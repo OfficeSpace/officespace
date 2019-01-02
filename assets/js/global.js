@@ -196,8 +196,8 @@
 		});
 
 		//move faq menu
-		if($('#faq-menu').length != 0){
-			$('#faq-menu').detach().prependTo('.site-content-contain #content');
+		if($('#faq').length != 0){
+			$('#primary').css('background', '#f2f2f2');
 		}
 
 		// If navigation menu is present on page, setNavProps and adjustScrollClass.
