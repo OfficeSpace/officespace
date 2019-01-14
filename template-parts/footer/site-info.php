@@ -12,7 +12,7 @@
 
 <div class="component page-footer">
   <div class="copyright">
-    All Content © 2018 <a href="/">OfficeSpace.com</a>, All Rights Reserved
+    All Content © 2019 <a href="/">OfficeSpace.com</a>, All Rights Reserved
 
   </div>
   <div class="navigation">
