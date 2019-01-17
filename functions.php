@@ -137,19 +137,6 @@ function add_blog_type_query_var(){
 
 add_filter( 'init', 'add_blog_type_query_var' );
 
-/*
-	Try to remove no-cache headers if they and cache headers exist
-*/
-function officespace_cache_headers_ensure($headers){
-	//remove cache-control headers if cache control plugin active
-	if(has_action('template_redirect', 'cache_control_send_headers')){
-		unset($headers['Cache-Control']);
-	}
-
-	return $headers;
-}
-
-add_filter('wp_headers', 'officespace_cache_headers_ensure', 15);
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
