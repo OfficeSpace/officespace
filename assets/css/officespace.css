@@ -1264,3 +1264,101 @@ nav#site-navigation ul#top-menu>li.right-side > a {
 }
 
 
+/* Scott Driver Page */
+@charset "UTF-8";
+#scott-driver {
+  border: 3px solid #000;
+  padding: 10px;
+  box-shadow: grey 2px 7px 14px;
+  float: left;
+}
+@media screen and (min-width: 600px) {
+  #scott-driver #left {
+    width: 25%;
+    float: left;
+  }
+}
+@media screen and (max-width: 599px) {
+  #scott-driver #left {
+    width: 100%;
+    float: right;
+  }
+}
+#scott-driver #left img {
+  display: block;
+  margin: 0 auto;
+}
+#scott-driver #left #info h2 {
+  color: #000;
+  font-size: 21px;
+}
+#scott-driver #left #info h3 {
+  margin: 0px;
+  padding-top: 0px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#scott-driver #left #info p {
+  font-size: 13px;
+}
+#scott-driver #left #testimonial > p {
+  font-size: 13px;
+}
+#scott-driver #right {
+  float: left;
+}
+@media screen and (min-width: 600px) {
+  #scott-driver #right {
+    padding-left: 2%;
+    width: 73%;
+  }
+}
+@media screen and (max-width: 599) {
+  #scott-driver #right {
+    width: 100%;
+  }
+}
+#scott-driver #right h1 {
+  margin-bottom: 0;
+  font-size: 38px;
+  text-shadow: grey 2px 5px 10px;
+  font-weight: 800;
+}
+#scott-driver #right h2.lead_text {
+  font-size: 20px;
+  font-style: italic;
+  color: #000;
+  font-family: cursive;
+  padding-top: 1%;
+  font-weight: 300px;
+}
+#scott-driver #right h2.subtitle.center {
+  margin-top: 0;
+  padding-top: 10px;
+  color: #000;
+  font-style: italic;
+  font-family: cursive;
+}
+#scott-driver #right h3.subtitle {
+  margin: 0;
+  padding: 0;
+}
+#scott-driver #right ul {
+  margin-left: 8%;
+}
+#scott-driver #right ul li {
+  list-style: disc;
+}
+#scott-driver blockquote {
+  font-size: 14px;
+}
+#scott-driver blockquote p:before {
+  content: "“";
+  font-family: "Sanchez";
+  color: inherit;
+}
+#scott-driver blockquote p:after {
+  content: "”";
+  font-family: "Sanchez";
+  color: inherit;
+}
