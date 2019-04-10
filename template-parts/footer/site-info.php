@@ -12,7 +12,8 @@
 
 <div class="component page-footer">
   <div class="copyright">
-    All Content © 2019 <a href="/">OfficeSpace.com</a>, All Rights Reserved
+    All Content © <?php echo date("Y");?> <a href="/">OfficeSpace.com</a>, All Rights Reserved.
+    <a href="/pages/terms">Terms of Use & Privacy Policy</a>
 
   </div>
   <div class="navigation">
