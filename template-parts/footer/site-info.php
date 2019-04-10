@@ -13,7 +13,7 @@
 <div class="component page-footer">
   <div class="copyright">
     All Content © <?php echo date("Y");?> <a href="/">OfficeSpace.com</a>, All Rights Reserved.
-    <a href="/pages/terms">Terms of Use & Privacy Policy</a>
+    <a href="/pages/terms">Terms of Use </a> &amp; <a href="/pages/privacy">Privacy Policy</a>
 
   </div>
   <div class="navigation">
