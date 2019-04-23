@@ -99,12 +99,7 @@ add_action('init', 'officespace_add_pages_rewrite');
 
 
 function get_template_page_id($type = 'home_page'){
-	$page_id = ($type=='home_page')? get_option('page_on_front') : false;
-
-	if($page_id != false){
-		return $page_id;
-	}
-
+	$page_id = false;
 	$args = array(
 	    'post_type' => 'page',
 	    'posts_per_page' => -1,
