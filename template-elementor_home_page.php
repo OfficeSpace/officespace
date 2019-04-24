@@ -6,11 +6,10 @@ Template Name: Elementor Home Page
 get_header(); ?>
 
 
-<div id="primary" class="content-area wrap">
-  <main id="main" class="site-main" role="main">
+<div class="site-content-contain">
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-      <div class="no-sidebar-content">
+    <div id="content" class="site-content">
+      <div data-elementor-type="post" data-elementor-id="<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <?php twentyseventeen_edit_link( get_the_ID() ); ?>
         <?php
@@ -22,8 +21,7 @@ get_header(); ?>
           ) );
         ?>
       </div><!-- .entry-content -->
-    </article><!-- #post-## -->
-  </main>
+    </div><!-- #post-## -->
 </div>
 
 <?php get_footer(); ?>
