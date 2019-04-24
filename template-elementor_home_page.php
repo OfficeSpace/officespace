@@ -1,0 +1,29 @@
+<?php
+/*
+Template Name: Elementor Home Page
+*/
+
+get_header(); ?>
+
+
+<div id="primary" class="content-area wrap">
+  <main id="main" class="site-main" role="main">
+
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <div class="no-sidebar-content">
+
+        <?php twentyseventeen_edit_link( get_the_ID() ); ?>
+        <?php
+          the_content();
+
+          wp_link_pages( array(
+            'before' => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
+            'after'  => '</div>',
+          ) );
+        ?>
+      </div><!-- .entry-content -->
+    </article><!-- #post-## -->
+  </main>
+</div>
+
+<?php get_footer(); ?>

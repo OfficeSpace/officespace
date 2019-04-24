@@ -81,6 +81,7 @@ add_filter('body_class', 'officespace_add_body_class',10);
 	This adds a rewrite rule if a page is set with the mock home page template
 */
 function officespace_add_pages_rewrite(){
+	global $wp_rewrite;
 	$page_id = get_template_page_id('home_page');
 	$search_id = get_template_page_id('search');
 
@@ -88,22 +89,18 @@ function officespace_add_pages_rewrite(){
 	if($search_id){
 		add_rewrite_rule( 'blog/search/(.*)/?', 'index.php?page_id='.$search_id.'&search=$matches[1]', 'top' );
 	}
-
 	if($page_id){
-
 		add_rewrite_rule( 'blog/?$', 'index.php?page_id='.$page_id, 'top' );
+		$wp_rewrite->add_permastruct( "blog", "blog/?$", false );
 	}
+	flush_rewrite_rules();
 
 }
 add_action('init', 'officespace_add_pages_rewrite');
 
 
 function get_template_page_id($type = 'home_page'){
-	$page_id = ($type=='home_page')? get_option('page_on_front') : false;
-
-	if($page_id != false){
-		return $page_id;
-	}
+	$page_id = false;
 
 	$args = array(
 	    'post_type' => 'page',
@@ -111,7 +108,7 @@ function get_template_page_id($type = 'home_page'){
 	    'meta_query' => array(
 	        array(
 	            'key' => '_wp_page_template',
-	            'value' => 'template-mock_home_page.php'
+	            'value' => 'template-elementor_home_page.php'
 	        )
 	    )
 	);
@@ -122,15 +119,26 @@ function get_template_page_id($type = 'home_page'){
 			break;
 	}
 
+	$page_id = grab_page_id_from_search_args($args);
+
+	if($page_id == false && $type == 'home_page'){
+		$args['meta_query'][0]['value'] = 'template-mock_home_page.php';
+		$page_id = grab_page_id_from_search_args($args);
+	}
+
+	return $page_id;
+
+}
+
+function grab_page_id_from_search_args($args){
+	$page_id = false;
 	$the_pages = new WP_Query( $args );
 
 	while($the_pages->have_posts()) {
 		$the_pages->the_post();
 		$page_id = get_the_ID();
 	}
-
 	return $page_id;
-
 }
 
 //query vars
