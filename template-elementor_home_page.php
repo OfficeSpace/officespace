@@ -6,7 +6,7 @@ Template Name: Elementor Home Page
 get_header(); ?>
 
 
-<div class="site-content-contain">
+<div>
 
       <div data-elementor-type="post" data-elementor-id="<?php the_ID(); ?>" <?php post_class(); ?>>
 
