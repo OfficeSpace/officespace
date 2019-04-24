@@ -8,7 +8,6 @@ get_header(); ?>
 
 <div class="site-content-contain">
 
-    <div id="content" class="site-content">
       <div data-elementor-type="post" data-elementor-id="<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <?php twentyseventeen_edit_link( get_the_ID() ); ?>
@@ -21,7 +20,6 @@ get_header(); ?>
           ) );
         ?>
       </div><!-- .entry-content -->
-    </div><!-- #post-## -->
 </div>
 
 <?php get_footer(); ?>
