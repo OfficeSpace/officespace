@@ -33,7 +33,7 @@
                 <a href="/users/edit" data-hide-when-user-absent="true" id="account_button" style="">Settings</a>
               </li>
               <li>
-                <a href="/" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
+                <a href="<?php echo home_url(); ?>" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
               </li>
             </ul>
           </li>
@@ -128,7 +128,7 @@
               <a href="/users/edit" data-hide-when-user-absent="true" id="account_button">Account Settings</a>
             </li>
             <li>
-              <a href="/" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
+              <a href="<?php echo home_url(); ?>" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
             </li>
             <li>
               <a href="pages/faq">Help </a>

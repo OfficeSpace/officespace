@@ -2,11 +2,6 @@
   $(document).ready(function(){
     var user = Cookies.get('user');
 
-    //logout
-    $(document).on('click','#logout_button',function(ev){
-      ev.preventDefault();
-      $(this).closest('form').submit();
-    })
     //make sure mobile menu checkbox is unchecked on page load
     if($('#menu-toggle > input:checkbox').prop('checked')) {
       $('#menu-toggle > input:checkbox').prop('checked', false);
