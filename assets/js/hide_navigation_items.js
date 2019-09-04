@@ -1,6 +1,12 @@
 (function($){
   $(document).ready(function(){
     var user = Cookies.get('user');
+
+    //logout
+    $(document).on('click','#logout_button',function(ev){
+      ev.preventDefault();
+      $(this).closest('form').submit();
+    })
     //make sure mobile menu checkbox is unchecked on page load
     if($('#menu-toggle > input:checkbox').prop('checked')) {
       $('#menu-toggle > input:checkbox').prop('checked', false);
@@ -13,10 +19,12 @@
     }
     
 
-    if( user !== undefined ) {
-      $('[data-show-when-user-absent="true"]').hide(); 
-    } else{
+    if( user == undefined ) {
+      $('[data-hide-when-user-absent="true"]').hide();
       $('[data-show-when-user-present="true"]').hide();
+    } else{    
+      $('[data-show-when-user-absent="true"]').hide();
+      $('[data-hide-when-user-present="true"]').hide();
     }
 
     if (user !== undefined){

@@ -8,8 +8,8 @@
         <span></span>
         <div class="overlay"></div>
         <ul id="menu">
-          <li data-hide-when-user-present="true" style="display: none;">
-            <a href="/users/sign_in" data-hide-when-user-present="true" data-login="true" id="login_button" style="display: none;">Log in or Join</a>
+          <li data-hide-when-user-present="true" >
+            <a href="/users/sign_in" data-hide-when-user-present="true" data-login="true" id="login_button">Log in or Join</a>
           </li>
           <li data-hide-when-user-absent="true">
             <p id="mobile_user_name"></p>
@@ -33,7 +33,7 @@
                 <a href="/users/edit" data-hide-when-user-absent="true" id="account_button" style="">Settings</a>
               </li>
               <li>
-                <a href="http://officespace.local/users/sign_out" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
+                <a href="/" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
               </li>
             </ul>
           </li>
@@ -128,7 +128,7 @@
               <a href="/users/edit" data-hide-when-user-absent="true" id="account_button">Account Settings</a>
             </li>
             <li>
-              <a href="http://officespace.local/users/sign_out" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
+              <a href="/" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
             </li>
             <li>
               <a href="pages/faq">Help </a>
