@@ -25,6 +25,7 @@ function officespace_add_js(){
 add_action('wp_enqueue_scripts', 'officespace_add_js');
 
 function officespace_styles(){
+	wp_enqueue_style('fontawesome_style', get_stylesheet_directory_uri().'/assets/css/font-awesome/css/font-awesome.min.css' );
   wp_enqueue_style('officespace_style', get_stylesheet_directory_uri().'/assets/css/officespace.css' );
 }
 
