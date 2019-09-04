@@ -135,8 +135,8 @@
             </li>
           </ul>
         </li>
-        <li class="login_li" data-hide-when-user-present="true" style="display: none;">
-          <a href="/users/sign_in" data-hide-when-user-present="true" data-login="true" id="login_button" style="display: none;">Log in or Join</a>
+        <li class="login_li" data-hide-when-user-present="true">
+          <a href="/users/sign_in" data-hide-when-user-present="true" data-login="true" id="login_button" >Log in or Join</a>
         </li>
       </ul>
     </div>
