@@ -14,10 +14,8 @@
     
 
     if( user !== undefined ) {
-      $('[data-hide-when-user-present="true"]').hide();
-      $('[data-show-when-user-absent="true"]').hide();
+      $('[data-show-when-user-absent="true"]').hide(); 
     } else{
-      $('[data-hide-when-user-absent="true"]').hide();
       $('[data-show-when-user-present="true"]').hide();
     }
 
