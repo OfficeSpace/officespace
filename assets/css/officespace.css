@@ -2014,6 +2014,9 @@ i.facebook:before{
 }i.twitter:before{
     content: "\f099";
 }
+i.facebook, i.instagram, i.twitter, i.user-gray, i.angle-down, i.angle-up{
+    font-style: normal;
+}
 i.user-gray {
     color: #e2e2e2;
     font-size: 25px;
