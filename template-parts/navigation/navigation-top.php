@@ -98,7 +98,7 @@
             <i class="angle-down"></i>
           </a>
           <ul class="dropdown">
-            <li data-show-when-user-absent="true" style="display: none;">
+            <li data-show-when-user-absent="true" >
               <a href="/addlisting">Manage Listings</a>
             </li>
             <li data-show-when-user-present="true">
