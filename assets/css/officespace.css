@@ -1511,6 +1511,11 @@ nav#site-navigation ul#top-menu>li.right-side > a {
 .page-header .container ul.primary-navigation > li > ul.dropdown{
     padding-bottom: 5px!important;
 }
+@media only screen and (max-width: 1080px) {
+    .component.page-header .container nav.mobile-navigation #menu > li > .sub-menu {
+        transition: none!important
+    }
+}
 
  /*--- above custom for blog---*/
  /*----Below compiled scss from prod ---*/
