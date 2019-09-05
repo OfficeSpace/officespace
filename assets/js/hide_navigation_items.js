@@ -39,16 +39,26 @@
       $('.component.page-header > div.container').css('padding-right',0);
     }
 
+    set_search_links = function(path){
+      $('.top-menu-holder .primary-navigation a#search').attr('href', path);
+      $('.mobile-navigation a#search').attr('href', path);
+      $('.mobile-navigation a#search-for-lease').attr('href', '/for-lease/' + path);
+      $('.mobile-navigation a#search-for-sale').attr('href', '/for-sale/' + path);
+    }
+    
     var close_all_other_mobile_menus, home_geography_path;
     home_geography_path = Cookies.get('home_geography_path');
     if( home_geography_path === undefined ){
       home_geography_path = '/'
+      $.get('/api/current_city',function(data){ 
+        if(data !== undefined ){
+          Cookies.set('home_geography_path', data.path)
+          set_search_links(data.path)
+        }
+      });
     }
     if (Cookies.get('home_geography_path') !== undefined) {
-      $('.top-menu-holder .primary-navigation a#search').attr('href', home_geography_path);
-      $('.mobile-navigation a#search').attr('href', home_geography_path);
-      $('.mobile-navigation a#search-for-lease').attr('href', '/for-lease/' + home_geography_path);
-      $('.mobile-navigation a#search-for-sale').attr('href', '/for-sale/' + home_geography_path);
+      set_search_links(home_geography_path)
     }
     close_all_other_mobile_menus = function(elem) {
       return $('#menu-toggle > #menu input:checkbox').each(function() {
