@@ -1229,7 +1229,7 @@ nav#site-navigation ul#top-menu>li.right-side > a {
 .component.page-footer a {
   color: #7B7474;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .component.page-footer > div {
   flex-basis: 50%;
