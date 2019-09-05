@@ -1519,6 +1519,9 @@ nav#site-navigation ul#top-menu>li.right-side > a {
         transition: all 0.1s ease-in-out!important
     }
 }
+.component.page-header .container {
+    padding-right: 0!important;
+}
 
  /*--- above custom for blog---*/
  /*----Below compiled scss from prod ---*/
