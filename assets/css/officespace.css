@@ -1999,7 +1999,7 @@ i.angle-up:before {
 }
 i.angle-down{
     color: #d8d8d8;
-    padding-left: 8px;
+    padding-left: 3px;
 }
 i.angle-down:before {
     content: "\f107";
