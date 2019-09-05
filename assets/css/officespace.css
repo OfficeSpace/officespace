@@ -1992,7 +1992,7 @@ i{
 }
 i.angle-up {
     color: #d8d8d8;
-    padding-left: 8px;
+    padding-left: 3px;
 }
 i.angle-up:before {
     content: "\f106";
