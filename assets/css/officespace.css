@@ -2004,6 +2004,16 @@ i.angle-down{
 i.angle-down:before {
     content: "\f107";
 }
+i.facebook, i.twitter, i.instagram{
+    color: #7b7474;
+}
+i.facebook:before{
+    content: "\f09a";
+}i.instagram:before{
+    content: "\f16d";
+}i.twitter:before{
+    content: "\f099";
+}
 i.user-gray {
     color: #e2e2e2;
     font-size: 25px;
