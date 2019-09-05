@@ -36,6 +36,7 @@
       $('#mobile_user_name').text('Hi ' + name);
       //calculate width of name item
       $('li.user').width($('li.user > i.angle-down').width() + $('li.user > span').width() + $('li.user > i.user-gray').width()+50+'px');
+      $('.component.page-header > div.container').css('padding-right',0);
     }
 
     var close_all_other_mobile_menus, home_geography_path;
