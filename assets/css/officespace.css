@@ -1489,7 +1489,8 @@ nav#site-navigation ul#top-menu>li.right-side > a {
 .component.page-header .container ul.primary-navigation > li.login_li a#login_button{
     width: 125px!important;
     height: 39px!important;
-    padding: 6px 14px 4px 9px!important;
+    padding: 4px 10px 4px 6px!important;
+    text-align: center;
 }
 .component.page-header .container .top-menu-holder{
     width: 440px;
