@@ -1503,10 +1503,14 @@ nav#site-navigation ul#top-menu>li.right-side > a {
 }
 .component.page-header .container ul.primary-navigation li.my-officespace ul.dropdown li a, .component.page-header .container ul.primary-navigation li.manage ul.dropdown li a, .component.page-header .container ul.primary-navigation li.marketing-services ul.dropdown li a {
     padding: 0.5rem 1rem!important;
+    line-height: 19px!important;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace ul.dropdown li, .component.page-header .container ul.primary-navigation li.manage ul.dropdown li, .component.page-header .container ul.primary-navigation li.marketing-services ul.dropdown li {
+    height: 35px!important;
 }
 
  /*--- above custom for blog---*/
-
+ /*----Below compiled scss from prod ---*/
 
 html {
   visibility: hidden;
