@@ -9,7 +9,7 @@
         <div class="overlay"></div>
         <ul id="menu">
           <li data-hide-when-user-present="true" >
-            <a href="/users/sign_in" data-hide-when-user-present="true" data-login="true" id="login_button">Log in or Join</a>
+            <a href="<?php echo home_url(); ?>/users/sign_in" data-hide-when-user-present="true" data-login="true" id="login_button">Log in or Join</a>
           </li>
           <li data-hide-when-user-absent="true">
             <p id="mobile_user_name"></p>
@@ -21,16 +21,16 @@
             <div class="category">My Account</div>
             <ul class="sub-menu" id="for_user_account">
               <li data-hide-when-not-broker="">
-                <a href="/manage">Broker Dashboard</a>
+                <a href="<?php echo home_url(); ?>/manage">Broker Dashboard</a>
               </li>
               <li>
-                <a href="/inquiries">Inquiries</a>
+                <a href="<?php echo home_url(); ?>/inquiries">Inquiries</a>
               </li>
               <li>
-                <a href="/favorites">Favorites</a>
+                <a href="<?php echo home_url(); ?>/favorites">Favorites</a>
               </li>
               <li>
-                <a href="/users/edit" data-hide-when-user-absent="true" id="account_button" style="">Settings</a>
+                <a href="<?php echo home_url(); ?>/users/edit" data-hide-when-user-absent="true" id="account_button" style="">Settings</a>
               </li>
               <li>
                 <a href="<?php echo home_url(); ?>" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
@@ -44,13 +44,13 @@
             <div class="category" id="search_top">Search</div>
             <ul class="sub-menu" id="for-search">
               <li>
-                <a id="search-for-lease" href="/for-lease//wa/seattle">For Lease</a>
+                <a id="search-for-lease" href="/">For Lease</a>
               </li>
               <li>
-                <a id="search-for-sale" href="/for-sale//wa/seattle">For Sale</a>
+                <a id="search-for-sale" href="/">For Sale</a>
               </li>
               <li>
-                <a id="search" href="/wa/seattle">All Listings</a>
+                <a id="search" href="/">All Listings</a>
               </li>
             </ul>
           </li>
@@ -61,18 +61,18 @@
             <div class="category">List</div>
             <ul class="sub-menu" id="for-pros">
               <li data-show-when-user-absent="true" >
-                <a href="/addlisting">Manage Listings</a>
+                <a href="<?php echo home_url(); ?>/addlisting">Manage Listings</a>
               </li>
               <li data-show-when-user-present="true">
-                <a href="/manage/buildings">Manage Listings</a>
+                <a href="<?php echo home_url(); ?>/manage/buildings">Manage Listings</a>
               </li>
               <li>
-                <a href="/pages/broker-tools">Advertise</a>
+                <a href="<?php echo home_url(); ?>/pages/broker-tools">Advertise</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/pages/faq">Help</a>
+            <a href="<?php echo home_url(); ?>/pages/faq">Help</a>
           </li>
           <li>
             <a href="tel:18005063544" id="phone_number">
@@ -99,13 +99,13 @@
           </a>
           <ul class="dropdown">
             <li data-show-when-user-absent="true" >
-              <a href="/addlisting">Manage Listings</a>
+              <a href="<?php echo home_url(); ?>/addlisting">Manage Listings</a>
             </li>
             <li data-show-when-user-present="true">
-              <a href="/manage/buildings">Manage Listings</a>
+              <a href="<?php echo home_url(); ?>/manage/buildings">Manage Listings</a>
             </li>
             <li>
-              <a href="/pages/broker-tools">Advertise</a>
+              <a href="<?php echo home_url(); ?>/pages/broker-tools">Advertise</a>
             </li>
           </ul>
         </li>
@@ -116,27 +116,27 @@
           <i class="user-gray"></i>
           <ul class="dropdown">
             <li data-hide-when-not-broker="true">
-              <a href="/manage">Broker Dashboard</a>
+              <a href="<?php echo home_url(); ?>/manage">Broker Dashboard</a>
             </li>
             <li>
-              <a href="/inquiries">Inquiries</a>
+              <a href="<?php echo home_url(); ?>/inquiries">Inquiries</a>
             </li>
             <li>
-              <a href="/favorites">Favorites</a>
+              <a href="<?php echo home_url(); ?>/favorites">Favorites</a>
             </li>
             <li>
-              <a href="/users/edit" data-hide-when-user-absent="true" id="account_button">Account Settings</a>
+              <a href="<?php echo home_url(); ?>/users/edit" data-hide-when-user-absent="true" id="account_button">Account Settings</a>
             </li>
             <li>
               <a href="<?php echo home_url(); ?>" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
             </li>
             <li>
-              <a href="pages/faq">Help </a>
+              <a href="<?php echo home_url(); ?>pages/faq">Help </a>
             </li>
           </ul>
         </li>
         <li class="login_li" data-hide-when-user-present="true">
-          <a href="/users/sign_in" data-hide-when-user-present="true" data-login="true" id="login_button" >Log in or Join</a>
+          <a href="<?php echo home_url(); ?>/users/sign_in" data-hide-when-user-present="true" data-login="true" id="login_button" >Log in or Join</a>
         </li>
       </ul>
     </div>
