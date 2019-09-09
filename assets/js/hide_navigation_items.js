@@ -33,9 +33,16 @@
       }
 
       $('span#user_name').text(name);
+
       $('#mobile_user_name').text('Hi ' + name);
       //calculate width of name item
-      $('li.user').width($('li.user > i.angle-down').width() + $('li.user > span').width() + $('li.user > i.user-gray').width()+50+'px');
+      el = $('li.user').clone(false)
+      el.css({ visibility: 'hidden', position: 'absolute'})
+      el.appendTo('body')
+      width = el.find('i.angle-down').width() + el.find('span').width() + el.find('i.user-gray').width()+50+'px'
+      el.remove()
+      $('li.user').width(width)
+
       $('.component.page-header > div.container').css('padding-right',0);
     }
 
@@ -45,7 +52,7 @@
       $('.mobile-navigation a#search-for-lease').attr('href', '/for-lease/' + path);
       $('.mobile-navigation a#search-for-sale').attr('href', '/for-sale/' + path);
     }
-    
+
     var close_all_other_mobile_menus, home_geography_path;
     home_geography_path = Cookies.get('home_geography_path');
     if( home_geography_path === undefined ){
