@@ -1518,6 +1518,9 @@ nav#site-navigation ul#top-menu>li.right-side > a {
     .component.page-header .container nav.mobile-navigation #menu > li > .sub-menu {
         transition: all 0.1s ease-in-out!important
     }
+    .component.page-header .container .top-menu-holder{
+        display: none!important;
+    }
 }
 
  /*--- above custom for blog---*/
