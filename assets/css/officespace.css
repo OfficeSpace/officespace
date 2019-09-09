@@ -1607,7 +1607,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   z-index: 1;
 }
 .component.page-header .container .logo img {
-  width: 183px;
+  width: 161px;
 }
 .component.page-header .container .logo a {
   font-size: 62.5%;
