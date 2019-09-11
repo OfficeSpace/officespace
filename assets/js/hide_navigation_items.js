@@ -8,8 +8,15 @@
     return rtn
   }
   window.onbeforeunload =  window.close_menus
-  $(window).on('beforeunload',window.close_menus)
+  window.pagehide = window.close_menus
+  $(window).on('beforeunload pagehide',window.close_menus)
   $(window).unload(window.close_menus)
+  $(document).on('click', 'a', function(ev){
+    href = $(this).attr('href')
+    if (href !== undefined  && href.length > 3 && $('#menu-toggle > input:checkbox').prop('checked')){
+      window.close_menus()
+    }
+  });
   $(document).ready(function(){
     var user = Cookies.get('user');
 
