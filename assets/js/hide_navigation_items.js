@@ -1,4 +1,15 @@
 (function($){
+  window.close_menus = function(){
+    $('#menu-toggle > input:checkbox').prop('checked',false)
+    $('#menu-toggle > #menu input:checkbox').each( function(){
+      $(this).prop('checked',false)
+    });
+    rtn = undefined 
+    return rtn
+  }
+  window.onbeforeunload =  window.close_menus
+  $(window).on('beforeunload',window.close_menus)
+
   $(document).ready(function(){
     var user = Cookies.get('user');
 
