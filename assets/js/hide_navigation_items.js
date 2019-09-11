@@ -9,7 +9,7 @@
   }
   window.onbeforeunload =  window.close_menus
   $(window).on('beforeunload',window.close_menus)
-
+  $(window).unload(window.close_menus)
   $(document).ready(function(){
     var user = Cookies.get('user');
 
