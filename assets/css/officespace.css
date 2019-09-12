@@ -1608,7 +1608,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   align-items: flex-end;
   margin-right: 2rem;
   position: relative;
-  bottom: 0px;
+  top: -1px;
   z-index: 1;
 }
 .component.page-header .container .logo img {
