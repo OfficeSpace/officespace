@@ -1809,7 +1809,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
     display: block;
     position: absolute;
     top: 18px;
-    left: -6px;
+    left: -11px;
     z-index: 102;
     user-select: none;
     margin-right: 2rem;
