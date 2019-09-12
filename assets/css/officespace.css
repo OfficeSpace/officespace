@@ -1784,7 +1784,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   .component.page-header {
     width: 100%;
     min-width: 320px;
-    height: 51px;
+    height: 50px;
     position: relative;
   }
   .component.page-header .container {
@@ -1804,7 +1804,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
     display: block;
     position: absolute;
     top: 18px;
-    left: -5px;
+    left: -6px;
     z-index: 102;
     user-select: none;
     margin-right: 2rem;
