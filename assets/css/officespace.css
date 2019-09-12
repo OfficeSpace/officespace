@@ -1868,7 +1868,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
     transform: rotate(0deg) scale(0.2, 0.2);
   }
   .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked ~ #menu {
-    left: -1.5rem;
+    left: -1.2rem;
     width: 75vw;
     height: 100vh;
     top: -18px;
