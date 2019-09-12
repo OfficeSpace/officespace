@@ -64,6 +64,34 @@
     }
 
     set_search_links = function(path){
+      use_types = [
+        'office',
+        'sublease',
+        'for-sale',
+        'for-lease',
+        'executive-suite',
+        'coworking',
+        'retail',
+        'industrial',
+        'office-retail-mixed',
+        'flex-space',
+        'land',
+        'multi-family',
+        'medical-office'
+      ]
+      p = Cookies.get('current_location')
+      if(p !== undefined && p.length < path.length){
+        path = p
+      }else if(path.search("("+use_types.join("/|")+")") > 0 || path.indexOf('filter') > 0){
+        if(path.indexOf('filter') > 0){
+          path = path.slice(0,path.indexOf('/filter'))
+        }
+        path = path.replace(new RegExp("/"+use_types.join("/|")+"/","gm"),"")
+      }
+      if(path.charAt(0) != '/'){
+        path = "/"+ path 
+      }
+      
       $('.top-menu-holder .primary-navigation a#search').attr('href', path);
       $('.mobile-navigation a#search').attr('href', path);
       $('.mobile-navigation a#search-for-lease').attr('href', '/for-lease/' + path);
