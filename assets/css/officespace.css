@@ -1522,7 +1522,12 @@ nav#site-navigation ul#top-menu>li.right-side > a {
         display: none!important;
     }
 }
-
+@media only screen and (max-width: 1080px){
+    .component.page-header .container{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}
  /*--- above custom for blog---*/
  /*----Below compiled scss from prod ---*/
 
@@ -1603,7 +1608,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   align-items: flex-end;
   margin-right: 2rem;
   position: relative;
-  bottom: -2px;
+  bottom: 0px;
   z-index: 1;
 }
 .component.page-header .container .logo img {
