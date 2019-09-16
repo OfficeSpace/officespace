@@ -1621,7 +1621,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
 @media only screen and (max-width: 1080px) {
   .component.page-header .container .logo {
     margin-right: 0rem;
-    left: 2px;
+    left: 3px;
   }
 }
 .component.page-header .container ul.primary-navigation {
