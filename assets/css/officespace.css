@@ -1609,6 +1609,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   margin-right: 2rem;
   position: relative;
   top: -2px;
+  left: 2px;
   z-index: 1;
 }
 .component.page-header .container .logo img {
