@@ -131,7 +131,7 @@
               <a href="<?php echo home_url(); ?>" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
             </li>
             <li>
-              <a href="<?php echo home_url(); ?>pages/faq">Help </a>
+              <a href="<?php echo home_url(); ?>/pages/faq">Help </a>
             </li>
           </ul>
         </li>
