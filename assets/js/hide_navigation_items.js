@@ -4,6 +4,7 @@
     $('#menu-toggle > #menu input:checkbox').each( function(){
       $(this).prop('checked',false)
     });
+    $('body,html').removeClass('noscroll')
     rtn = undefined 
     return rtn
   }
