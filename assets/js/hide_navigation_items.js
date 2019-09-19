@@ -125,6 +125,9 @@
         $('body,html').addClass('noscroll')
       } else {
         $('body,html').removeClass('noscroll')
+        $('#menu-toggle > #menu input:checkbox').each(function(){
+          $(this).prop('checked',false)
+        });
       }
     }
     $('#menu-toggle > input:checkbox').click(function(ev) {
