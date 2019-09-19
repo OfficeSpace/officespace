@@ -1468,7 +1468,9 @@ nav#site-navigation ul#top-menu>li.right-side > a {
     width: 100%!important;
     padding-bottom: 0!important;
 }
-
+.component.page-header .container .top-menu-holder{
+    margin-right: 3px!important;
+}
 .page-header .container ul.primary-navigation > li > ul.dropdown
 {
     padding-bottom: 15px;
@@ -1489,7 +1491,7 @@ nav#site-navigation ul#top-menu>li.right-side > a {
 .component.page-header .container ul.primary-navigation > li.login_li a#login_button{
     width: 125px!important;
     height: 36px!important;
-    padding: 4px 8px 4px 6px!important;
+    padding: 4px 6px 4px 6px!important;
     text-align: center;
 }
 .component.page-header .container .top-menu-holder{
@@ -1619,7 +1621,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
 @media only screen and (max-width: 1080px) {
   .component.page-header .container .logo {
     margin-right: 0rem;
-    left: 3px;
+    left: 2px;
   }
 }
 .component.page-header .container ul.primary-navigation {
