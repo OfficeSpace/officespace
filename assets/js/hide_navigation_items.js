@@ -29,7 +29,6 @@
     } else{
       $('html').css('visibility','visible');
     }
-    
 
     if( user == undefined ) {
       $('[data-hide-when-user-absent="true"]').hide();
@@ -136,6 +135,11 @@
         $('#menu-toggle > input:checkbox').prop('checked', false);
         return $('body,html').removeClass('noscroll');
       }
+    });
+
+    $('.overlay').click( function(ev){
+      $('#menu-toggle > input:checkbox').prop('checked',false)
+      $('#menu').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', noscroll_toggle)
     });
 
   });
