@@ -1630,9 +1630,15 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
 .component.page-header .container ul.primary-navigation > li {
   height: 38px;
   padding-top: 12px;
-  position: relative;
+  position: relative!important;
   width: 117px;
   text-align: right;
+  position: relative;
+}
+.component.page-header .container ul.primary-navigation > li > i.angle-up, .component.page-header .container ul.primary-navigation > li > i.angle-down,
+.component.page-header .container ul.primary-navigation > li > a > i.angle-up,.component.page-header .container ul.primary-navigation > li > a > i.angle-down{
+    position: absolute;
+    bottom: -1px;
 }
 .component.page-header .container ul.primary-navigation > li a {
   text-align: right;
@@ -1675,6 +1681,12 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   padding-top: 6px;
   line-height: 1.2;
   cursor: pointer;
+}
+.component.page-header .container ul.primary-navigation > li.user > i.angle-up, .component.page-header .container ul.primary-navigation > li.user > i.angle-down {
+    right: 19px;
+}
+.component.page-header .container ul.primary-navigation > li.user > i.user-gray{
+    margin-left: 19px;
 }
 .component.page-header .container ul.primary-navigation > li.user > ul.dropdown {
   margin-top: -1%;

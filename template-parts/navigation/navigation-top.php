@@ -111,9 +111,9 @@
         </li>
         <li class="dropdown user manage" data-show-when-user-present="true">
           <span id="user_name"></span>
+          <i class="user-gray"></i>
           <i class="angle-up"></i>
           <i class="angle-down"></i>
-          <i class="user-gray"></i>
           <ul class="dropdown">
             <li data-hide-when-not-broker="true">
               <a href="<?php echo home_url(); ?>/manage">Broker Dashboard</a>

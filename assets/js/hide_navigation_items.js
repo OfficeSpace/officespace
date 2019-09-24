@@ -56,7 +56,7 @@
       el = $('li.user').clone(false)
       el.css({ visibility: 'hidden', position: 'absolute'})
       el.appendTo('body')
-      width = el.find('i.angle-down').width() + el.find('span').width() + el.find('i.user-gray').width()+50+'px'
+      width = el.find('i.angle-down').width() + el.find('span').width() + el.find('i.user-gray').width()+80+'px'
       el.remove()
       $('li.user').width(width)
 
