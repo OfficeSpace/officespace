@@ -1512,7 +1512,7 @@ nav#site-navigation ul#top-menu>li.right-side > a {
     padding-bottom: 5px!important;
 }
 .component.page-header .container ul.primary-navigation > li.user{
-    padding-top: 9px!important;
+    padding-top: 7px!important;
 }
 @media only screen and (max-width: 1080px) {
     .component.page-header .container nav.mobile-navigation #menu > li > .sub-menu {
@@ -1638,7 +1638,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
 .component.page-header .container ul.primary-navigation > li > i.angle-up, .component.page-header .container ul.primary-navigation > li > i.angle-down,
 .component.page-header .container ul.primary-navigation > li > a > i.angle-up,.component.page-header .container ul.primary-navigation > li > a > i.angle-down{
     position: absolute;
-    bottom: -1px;
+    bottom: -2px;
 }
 .component.page-header .container ul.primary-navigation > li a {
   text-align: right;
@@ -1684,6 +1684,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
 }
 .component.page-header .container ul.primary-navigation > li.user > i.angle-up, .component.page-header .container ul.primary-navigation > li.user > i.angle-down {
     right: 19px;
+    bottom: 0px;
 }
 .component.page-header .container ul.primary-navigation > li.user > i.user-gray{
     margin-left: 19px;
