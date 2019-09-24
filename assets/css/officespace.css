@@ -1,6 +1,7 @@
 /******************* Customizations *****************/
 body{
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 img.custom-logo {width: 200px}
 a.custom-logo-link {height: 38px}
