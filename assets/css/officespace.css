@@ -1885,7 +1885,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
     position: absolute;
     top: -4.6rem;
     left: 0;
-    height: 100vh;
+    height: 110vh;
     margin-left: -18%;
   }
   .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked > input:checked ~ html {
