@@ -1636,17 +1636,22 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   text-align: right;
   position: relative;
 }
-.component.page-header .container ul.primary-navigation > li > i.angle-up, .component.page-header .container ul.primary-navigation > li > i.angle-down,
-.component.page-header .container ul.primary-navigation > li > a > i.angle-up,.component.page-header .container ul.primary-navigation > li > a > i.angle-down{
+.component.page-header .container ul.primary-navigation li i.angle-up,.component.page-header .container ul.primary-navigation  i.angle-down {
     position: absolute;
     bottom: -2px;
+}
+.component.page-header .container ul.primary-navigation #user_manage{
+    max-width: 80%;
+    margin-left: 20%;
 }
 .component.page-header .container ul.primary-navigation > li a {
   text-align: right;
   width: 100%;
 }
 .component.page-header .container ul.primary-navigation > li.manage.last {
-  width: 86px;
+  width: 87px;
+  padding-left:5px;
+  padding-right:13px;
 }
 .component.page-header .container ul.primary-navigation > li a {
   color: #666666;
@@ -1659,6 +1664,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
 }
 .component.page-header .container ul.primary-navigation > li#search_li {
   width: 95px;
+  padding-left: 8px;
 }
 .component.page-header .container ul.primary-navigation > li.login_li {
   padding-top: 7px !important;
@@ -1683,8 +1689,8 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   line-height: 1.2;
   cursor: pointer;
 }
-.component.page-header .container ul.primary-navigation > li.user > i.angle-up, .component.page-header .container ul.primary-navigation > li.user > i.angle-down {
-    right: 19px;
+.component.page-header .container ul.primary-navigation i.angle-up, .component.page-header .container ul.primary-navigation i.angle-down {
+    right: 0px;
     bottom: 0px;
 }
 .component.page-header .container ul.primary-navigation > li.user > i.user-gray{
@@ -1741,7 +1747,7 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
 .component.page-header .container ul.primary-navigation li.my-officespace > a:hover i.angle-down, .component.page-header .container ul.primary-navigation li.manage > a:hover i.angle-down, .component.page-header .container ul.primary-navigation li.marketing-services > a:hover i.angle-down {
   display: none;
 }
-.component.page-header .container ul.primary-navigation li.my-officespace > a i.angle-up, .component.page-header .container ul.primary-navigation li.manage > a i.angle-up, .component.page-header .container ul.primary-navigation li.marketing-services > a i.angle-up {
+.component.page-header .container ul.primary-navigation li.my-officespace  i.angle-up, .component.page-header .container ul.primary-navigation li.manage  i.angle-up, .component.page-header .container ul.primary-navigation li.marketing-services i.angle-up {
   display: none;
 }
 .component.page-header .container ul.primary-navigation li.my-officespace > a i.angle-down, .component.page-header .container ul.primary-navigation li.manage > a i.angle-down, .component.page-header .container ul.primary-navigation li.marketing-services > a i.angle-down {
@@ -1751,24 +1757,34 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   font-size: 16px;
   font-weight: 400px !important;
   color: #666666;
+  margin-right: 11px;
 }
-.component.page-header .container ul.primary-navigation li.my-officespace:hover ul.dropdown, .component.page-header .container ul.primary-navigation li.manage:hover ul.dropdown, .component.page-header .container ul.primary-navigation li.marketing-services:hover ul.dropdown {
+.component.page-header .container ul.primary-navigation li.my-officespace:hover ul.dropdown, .component.page-header .container ul.primary-navigation li.manage.last:hover ul.dropdown, .component.page-header .container ul.primary-navigation li.marketing-services:hover ul.dropdown ,
+.component.page-header .container ul.primary-navigation li.user #user_manage:hover ul.dropdown{
   max-height: 222px !important;
   z-index: 20;
-  top: 0px;
+  top: 35px;
   padding-top: 9px;
+}
+.component.page-header .container ul.primary-navigation #user_manage i.angle-up, .component.page-header .container ul.primary-navigation #user_manage i.angle-down {
+    right: 19px;
 }
 .component.page-header .container ul.primary-navigation li.my-officespace:hover ul.dropdown.user, .component.page-header .container ul.primary-navigation li.manage:hover ul.dropdown.user, .component.page-header .container ul.primary-navigation li.marketing-services:hover ul.dropdown.user {
   margin-top: -2%;
 }
+.component.page-header .container ul.primary-navigation li.manage ul.dropdown{
+    left: -20%;
+}
+.component.page-header .container ul.primary-navigation li.last ul.dropdown{
+    width: 180px;
+}
 .component.page-header .container ul.primary-navigation li.my-officespace ul.dropdown, .component.page-header .container ul.primary-navigation li.manage ul.dropdown, .component.page-header .container ul.primary-navigation li.marketing-services ul.dropdown {
-  top: 0;
-  left: 10px;
   color: #666666;
+  left: -34px;
   font-size: 16px;
   line-height: 1.9rem;
   font-weight: normal;
-  position: relative;
+  position: absolute;
   width: 17rem;
   border: 1px solid #d8d8d8;
   display: block;
@@ -1795,7 +1811,6 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
   text-decoration: underline;
 }
 .component.page-header .container ul.primary-navigation li.manage ul.dropdown {
-  left: 0rem;
   width: 17.3rem;
 }
 .component.page-header nav.mobile-navigation {

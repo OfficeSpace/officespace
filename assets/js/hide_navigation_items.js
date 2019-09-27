@@ -48,7 +48,9 @@
       if(name.indexOf(' ') > 0){
         name = name.substr(0,name.indexOf(' '));
       }
-
+      if(name.length > 10){
+        name = name.substr(0,10)+"..."
+      }
       $('span#user_name').text(name);
 
       $('#mobile_user_name').text('Hi ' + name);

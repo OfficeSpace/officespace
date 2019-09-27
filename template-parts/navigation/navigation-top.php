@@ -110,30 +110,32 @@
           </ul>
         </li>
         <li class="dropdown user manage" data-show-when-user-present="true">
-          <span id="user_name"></span>
-          <i class="user-gray"></i>
-          <i class="angle-up"></i>
-          <i class="angle-down"></i>
-          <ul class="dropdown">
-            <li data-hide-when-not-broker="true">
-              <a href="<?php echo home_url(); ?>/manage">Broker Dashboard</a>
-            </li>
-            <li>
-              <a href="<?php echo home_url(); ?>/inquiries">Inquiries</a>
-            </li>
-            <li>
-              <a href="<?php echo home_url(); ?>/favorites">Favorites</a>
-            </li>
-            <li>
-              <a href="<?php echo home_url(); ?>/users/edit" data-hide-when-user-absent="true" id="account_button">Account Settings</a>
-            </li>
-            <li>
-              <a href="<?php echo home_url(); ?>" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
-            </li>
-            <li>
-              <a href="<?php echo home_url(); ?>/pages/faq">Help </a>
-            </li>
-          </ul>
+          <div id="user_manage">
+            <span id="user_name"></span>
+            <i class="user-gray"></i>
+            <i class="angle-up"></i>
+            <i class="angle-down"></i>
+            <ul class="dropdown">
+              <li data-hide-when-not-broker="true">
+                <a href="<?php echo home_url(); ?>/manage">Broker Dashboard</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url(); ?>/inquiries">Inquiries</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url(); ?>/favorites">Favorites</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url(); ?>/users/edit" data-hide-when-user-absent="true" id="account_button">Account Settings</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url(); ?>" data-hide-when-user-absent="true" data-method="delete" id="logout_button" rel="nofollow" style="">Log out</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url(); ?>/pages/faq">Help </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="login_li" data-hide-when-user-present="true">
           <a href="<?php echo home_url(); ?>/users/sign_in" data-hide-when-user-present="true" data-login="true" id="login_button" >Log in or Join</a>
