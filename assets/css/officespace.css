@@ -1602,7 +1602,6 @@ body.manage .page-header .container ul.primary-navigation > li:not(.user) {
 .component.page-header .container .left {
   width: auto;
   display: flex;
-  justify-content: space-between;
 }
 .component.page-header .container .logo {
   display: flex;
