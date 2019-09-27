@@ -2,6 +2,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     width: 100%;
+    -ms-overflow-style: none;
 }
 img.custom-logo {width: 200px}
 a.custom-logo-link {height: 38px}
