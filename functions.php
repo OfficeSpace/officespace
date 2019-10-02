@@ -16,7 +16,6 @@ foreach( $include_array as $file ){
 }
 
 function officespace_add_js(){
-	wp_enqueue_script( 'officespace_cookies','https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js', ['jquery']);
   wp_enqueue_script( 'officespace_accordion', get_stylesheet_directory_uri().'/assets/js/accordion.js', ['jquery'] );
   wp_enqueue_script( 'officespace_pie_icon', get_stylesheet_directory_uri().'/assets/js/pie_icon_make.js', ['jquery'] );
   wp_enqueue_script( 'officespace_js_cookie', 'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js', ['jquery']);
