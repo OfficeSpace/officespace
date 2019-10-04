@@ -18,7 +18,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 
@@ -30,11 +30,9 @@
 
 
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
-			<div class="navigation">
-				<div class="wrap">
+	
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-				</div><!-- .wrap -->
-			</div><!-- .navigation-top -->
+			
 		<?php endif; ?>
 
 	</header><!-- #masthead -->

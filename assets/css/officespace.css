@@ -1,4 +1,9 @@
 /******************* Customizations *****************/
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    -ms-overflow-style: none;
+}
 img.custom-logo {width: 200px}
 a.custom-logo-link {height: 38px}
 .site-branding {
@@ -1212,57 +1217,142 @@ nav#site-navigation ul#top-menu>li.right-side > a {
 }
 /**** footer ****/
 .component.page-footer {
-    color: #999999;
-    font-size: 14px;
-    max-width: calc(968px - 30px);
-    min-width: calc(320px - 30px);
-    margin: 0 auto;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.component.page-footer .copyright {
-    padding: 15px 0;
-}
-.component.page-footer .navigation {
-    display: flex;
-}
-.component.page-footer .navigation>div {
-    text-align: right;
-    font-weight: bold;
-    height: 20px;
-    line-height: 20px;
-    margin: 15px 8px;
-    margin-bottom: 20px;
-}
-.component.page-footer .navigation>div:last-child {
-    margin-right: none;
+  color: #7B7474;
+  font-size: 14px;
+  max-width: 1350px;
+  min-width: calc(320px - 30px);
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 3%;
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
 }
 .component.page-footer a {
-    color: #999999;
-    font-size: 14px;
+  color: #7B7474;
+  font-size: 14px;
+  font-weight: 500;
 }
-.site-footer{
-    margin-top: 0!important;
-    background: #f2f2f2;
-    border-top: none!important;
+.component.page-footer > div {
+  flex-basis: 50%;
+  max-width: 100%;
+  min-width: 350px;
 }
-.site-footer .wrap{
-    background: #f2f2f2;
-    padding-top: 0!important;
+.component.page-footer .navigation {
+  display: flex;
+}
+.component.page-footer .navigation > div {
+  text-align: right;
+  font-weight: 600;
+  height: 20px;
+  line-height: 20px;
+  margin: 15px 8px;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+  text-align: left;
+}
+.component.page-footer .navigation > div:last-child {
+  margin-right: none;
+}
+.component.page-footer .copyright {
+  padding: 15px 0;
+}
+.component.page-footer .copyright .social_media a i {
+  font-size: 22px;
+}
+.component.page-footer .copyright .social_media a:not(:first-child) {
+  margin-left: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .component.page-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .component.page-footer > div {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .component.page-footer .navigation {
+    padding-left: 3%;
+  }
+  .component.page-footer .copyright {
+    text-align: center;
+    margin-top: 5%;
+    min-width: 200px;
+  }
+  .component.page-footer .copyright .social_media {
+    text-align: center;
+  }
 }
 
-.photo-container img {
-    height: 300px;
-    display: block;
-    margin: 0 auto;
-    width:auto;
+.component.page-footer {
+  color: #7B7474;
+  font-size: 14px;
+  max-width: 1350px;
+  min-width: calc(320px - 30px);
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 3%;
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
 }
-
-.photo-grid .description-contents {
-    padding: 4px 2.3em;
+.component.page-footer a {
+  color: #7B7474;
+  font-size: 14px;
+  font-weight: 500;
 }
-
+.component.page-footer > div {
+  flex-basis: 50%;
+  max-width: 100%;
+  min-width: 350px;
+}
+.component.page-footer .navigation {
+  display: flex;
+}
+.component.page-footer .navigation > div {
+  text-align: right;
+  font-weight: 600;
+  height: 20px;
+  line-height: 20px;
+  margin: 15px 8px;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+  text-align: left;
+}
+.component.page-footer .navigation > div:last-child {
+  margin-right: none;
+}
+.component.page-footer .copyright {
+  padding: 15px 0;
+}
+.component.page-footer .copyright .social_media a i {
+  font-size: 22px;
+}
+.component.page-footer .copyright .social_media a:not(:first-child) {
+  margin-left: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .component.page-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .component.page-footer > div {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .component.page-footer .navigation {
+    padding-left: 3%;
+  }
+  .component.page-footer .copyright {
+    text-align: center;
+    margin-top: 5%;
+    min-width: 200px;
+  }
+  .component.page-footer .copyright .social_media {
+    text-align: center;
+  }
+}
 
 /* Scott Driver Page */
 @charset "UTF-8";
@@ -1371,4 +1461,605 @@ nav#site-navigation ul#top-menu>li.right-side > a {
   content: "”";
   font-family: "Sanchez";
   color: inherit;
+}
+
+/** HEADER STYLING **/
+
+.component.page-header{
+    float:none!important;
+    width: 100%!important;
+    padding-bottom: 0!important;
+}
+.component.page-header .container .top-menu-holder{
+    margin-right: 3px!important;
+}
+.page-header .container ul.primary-navigation > li > ul.dropdown
+{
+    padding-bottom: 15px;
+    display: none!important;
+}
+.page-header .container ul.primary-navigation > li:hover > ul.dropdown {
+    display: block!important;
+}
+.page-header .container nav.mobile-navigation #menu > li > input:checked ~ .sub-menu {
+    margin-left:0px!important;
+}
+.page-header p{
+    margin: 0;
+}
+.page-header .top-menu-holder ul.dropdown{
+    margin-left: 0!important;
+}
+.component.page-header .container ul.primary-navigation > li.login_li a#login_button{
+    width: 125px!important;
+    height: 36px!important;
+    padding: 4px 6px 4px 6px!important;
+    text-align: center;
+}
+.component.page-header .container .top-menu-holder{
+    width: 440px;
+}
+
+.component.page-header .container ul.primary-navigation li.manage ul.dropdown{
+    width: 11.3rem!important;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace ul.dropdown li a, .component.page-header .container ul.primary-navigation li.manage ul.dropdown li a, .component.page-header .container ul.primary-navigation li.marketing-services ul.dropdown li a {
+    padding: 0.5rem 1rem!important;
+    line-height: 19px!important;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace ul.dropdown li, .component.page-header .container ul.primary-navigation li.manage ul.dropdown li, .component.page-header .container ul.primary-navigation li.marketing-services ul.dropdown li {
+    height: 35px!important;
+}
+.page-header .container ul.primary-navigation > li > ul.dropdown{
+    padding-bottom: 5px!important;
+}
+.component.page-header .container ul.primary-navigation > li.user{
+    padding-top: 7px!important;
+}
+@media only screen and (max-width: 1080px) {
+    .component.page-header .container nav.mobile-navigation #menu > li > .sub-menu {
+        transition: all 0.1s ease-in-out!important
+    }
+    .component.page-header .container .top-menu-holder{
+        display: none!important;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .component.page-header .container{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}
+ /*--- above custom for blog---*/
+ /*----Below compiled scss from prod ---*/
+
+html {
+  visibility: hidden;
+}
+
+b {
+  font-weight: 600;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+body.noscroll {
+  height: 100%;
+  position: fixed;
+}
+
+html.noscroll {
+  overflow: hidden;
+  width: 100%;
+}
+
+body.manage .page-header .container ul.primary-navigation > li:not(.user) {
+  padding-top: 2% !important;
+}
+
+.component.page-header {
+  position: relative;
+  background: white;
+  box-shadow: 0px 1px 0px 0px #e3e3e3;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+.component.page-header #location_search_sticky_container-sticky-wrapper {
+  width: 100%;
+}
+.component.page-header #location_search_sticky_container-sticky-wrapper .container {
+  display: block;
+  padding-right: 0;
+  padding-left: 0;
+  background: #425791;
+}
+@media screen and (max-width: 1100px) {
+  .component.page-header #location_search_sticky_container-sticky-wrapper .container .component.location-search form.basic {
+    padding: 0 2%;
+  }
+}
+.component.page-header .container {
+  height: 50px !important;
+  max-width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  min-width: 320px;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.component.page-header .container .top-menu-holder {
+  display: flex;
+}
+@media only screen and (max-width: 1080px) {
+  .component.page-header .container {
+    justify-content: center;
+  }
+}
+.component.page-header .container .left {
+  width: auto;
+  display: flex;
+}
+.component.page-header .container .logo {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 2rem;
+  position: relative;
+  top: -2px;
+  left: 0px;
+  z-index: 1;
+}
+.component.page-header .container .logo img {
+  width: 161px;
+}
+.component.page-header .container .logo a {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 1080px) {
+  .component.page-header .container .logo {
+    margin-right: 0rem;
+    left: 2px;
+  }
+}
+.component.page-header .container ul.primary-navigation {
+  display: flex;
+}
+.component.page-header .container ul.primary-navigation > li {
+  height: 38px;
+  padding-top: 12px;
+  position: relative!important;
+  width: 117px;
+  text-align: right;
+  position: relative;
+}
+.component.page-header .container ul.primary-navigation li i.angle-up,.component.page-header .container ul.primary-navigation  i.angle-down {
+    position: absolute;
+    bottom: -2px;
+}
+.component.page-header .container ul.primary-navigation #user_manage{
+    max-width: 80%;
+    margin-left: 20%;
+}
+.component.page-header .container ul.primary-navigation > li a {
+  text-align: right;
+  width: 100%;
+}
+.component.page-header .container ul.primary-navigation > li.manage.last {
+  width: 87px;
+  padding-left:5px;
+  padding-right:13px;
+}
+.component.page-header .container ul.primary-navigation > li a {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  display: block;
+  height: 25px;
+  line-height: 26px;
+}
+.component.page-header .container ul.primary-navigation > li#search_li {
+  width: 95px;
+  padding-left: 8px;
+}
+.component.page-header .container ul.primary-navigation > li.login_li {
+  padding-top: 7px !important;
+  min-width: 100px;
+  padding-left: 34px;
+}
+.component.page-header .container ul.primary-navigation > li.login_li a#login_button {
+  border-radius: 2px;
+  font-size: 16px;
+  display: block;
+  padding: 4px 8px 4px 8px;
+  color: #666666;
+  border: 1px solid #d8d8d8;
+  margin-bottom: 4%;
+  width: 104px;
+  height: 25px;
+  line-height: 26px;
+}
+.component.page-header .container ul.primary-navigation > li.user {
+  text-align: right;
+  padding-top: 6px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.component.page-header .container ul.primary-navigation i.angle-up, .component.page-header .container ul.primary-navigation i.angle-down {
+    right: 0px;
+    bottom: 0px;
+}
+.component.page-header .container ul.primary-navigation > li.user > i.user-gray{
+    margin-left: 19px;
+}
+.component.page-header .container ul.primary-navigation > li.user > ul.dropdown {
+  margin-top: -1%;
+  left: -45px !important;
+}
+.component.page-header .container ul.primary-navigation > li.selected {
+  height: 36px;
+}
+.component.page-header .container ul.primary-navigation > li.selected a {
+  color: black;
+}
+.component.page-header .container ul.primary-navigation > li.selected a:hover {
+  text-decoration: none;
+}
+.component.page-header .container ul.primary-navigation > li.learn {
+  margin: -7px 0 0 -36px;
+}
+.component.page-header .container ul.primary-navigation > li.learn a {
+  font-size: 9px;
+  font-weight: normal;
+  color: #ff0000;
+  font-family: "Poppins", sans-serif;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace {
+  width: 160px;
+  padding-left: 10px;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace > i.angle-up, .component.page-header .container ul.primary-navigation li.manage > i.angle-up, .component.page-header .container ul.primary-navigation li.marketing-services > i.angle-up {
+  margin-right: 4%;
+  font-size: 16px;
+  display: none;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace > i.angle-down, .component.page-header .container ul.primary-navigation li.manage > i.angle-down, .component.page-header .container ul.primary-navigation li.marketing-services > i.angle-down {
+  margin-right: 4%;
+  font-size: 16px;
+  display: inline-block;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace:hover > i.angle-up, .component.page-header .container ul.primary-navigation li.manage:hover > i.angle-up, .component.page-header .container ul.primary-navigation li.marketing-services:hover > i.angle-up {
+  display: inline-block;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace:hover > i.angle-down, .component.page-header .container ul.primary-navigation li.manage:hover > i.angle-down, .component.page-header .container ul.primary-navigation li.marketing-services:hover > i.angle-down {
+  display: none;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace > a:hover, .component.page-header .container ul.primary-navigation li.manage > a:hover, .component.page-header .container ul.primary-navigation li.marketing-services > a:hover {
+  text-decoration: none;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace > a:hover i.angle-up, .component.page-header .container ul.primary-navigation li.manage > a:hover i.angle-up, .component.page-header .container ul.primary-navigation li.marketing-services > a:hover i.angle-up {
+  display: inline-block;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace > a:hover i.angle-down, .component.page-header .container ul.primary-navigation li.manage > a:hover i.angle-down, .component.page-header .container ul.primary-navigation li.marketing-services > a:hover i.angle-down {
+  display: none;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace  i.angle-up, .component.page-header .container ul.primary-navigation li.manage  i.angle-up, .component.page-header .container ul.primary-navigation li.marketing-services i.angle-up {
+  display: none;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace > a i.angle-down, .component.page-header .container ul.primary-navigation li.manage > a i.angle-down, .component.page-header .container ul.primary-navigation li.marketing-services > a i.angle-down {
+  display: inline-block;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace #user_name, .component.page-header .container ul.primary-navigation li.manage #user_name, .component.page-header .container ul.primary-navigation li.marketing-services #user_name {
+  font-size: 16px;
+  font-weight: 400px !important;
+  color: #666666;
+  margin-right: 11px;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace:hover ul.dropdown, .component.page-header .container ul.primary-navigation li.manage.last:hover ul.dropdown, .component.page-header .container ul.primary-navigation li.marketing-services:hover ul.dropdown ,
+.component.page-header .container ul.primary-navigation li.user #user_manage:hover ul.dropdown{
+  max-height: 222px !important;
+  z-index: 20;
+  top: 35px;
+  padding-top: 9px;
+}
+.component.page-header .container ul.primary-navigation #user_manage i.angle-up, .component.page-header .container ul.primary-navigation #user_manage i.angle-down {
+    right: 19px;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace:hover ul.dropdown.user, .component.page-header .container ul.primary-navigation li.manage:hover ul.dropdown.user, .component.page-header .container ul.primary-navigation li.marketing-services:hover ul.dropdown.user {
+  margin-top: -2%;
+}
+.component.page-header .container ul.primary-navigation li.manage ul.dropdown{
+    left: -20%;
+}
+.component.page-header .container ul.primary-navigation li.last ul.dropdown{
+    width: 180px;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace ul.dropdown, .component.page-header .container ul.primary-navigation li.manage ul.dropdown, .component.page-header .container ul.primary-navigation li.marketing-services ul.dropdown {
+  color: #666666;
+  left: -34px;
+  font-size: 16px;
+  line-height: 1.9rem;
+  font-weight: normal;
+  position: absolute;
+  width: 17rem;
+  border: 1px solid #d8d8d8;
+  display: block;
+  overflow: hidden;
+  max-height: 0px;
+  height: auto;
+  background: white;
+  display: block;
+  border: none;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace ul.dropdown li, .component.page-header .container ul.primary-navigation li.manage ul.dropdown li, .component.page-header .container ul.primary-navigation li.marketing-services ul.dropdown li {
+  text-align: left;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace ul.dropdown li a, .component.page-header .container ul.primary-navigation li.manage ul.dropdown li a, .component.page-header .container ul.primary-navigation li.marketing-services ul.dropdown li a {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.9rem;
+  font-weight: normal;
+  padding: 0.5rem 2rem;
+  border: none;
+  text-align: left !important;
+}
+.component.page-header .container ul.primary-navigation li.my-officespace ul.dropdown li a:hover, .component.page-header .container ul.primary-navigation li.manage ul.dropdown li a:hover, .component.page-header .container ul.primary-navigation li.marketing-services ul.dropdown li a:hover {
+  text-decoration: underline;
+}
+.component.page-header .container ul.primary-navigation li.manage ul.dropdown {
+  width: 17.3rem;
+}
+.component.page-header nav.mobile-navigation {
+  display: none;
+}
+@media only screen and (max-width: 1080px) {
+  .component.page-header {
+    width: 100%;
+    min-width: 320px;
+    height: 50px;
+    position: relative;
+  }
+  .component.page-header .container {
+    width: 100%;
+    background: white;
+  }
+  .component.page-header .container ul.primary-navigation {
+    display: none;
+  }
+  .component.page-header .container nav.mobile-navigation {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    right: auto;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle {
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: -11px;
+    z-index: 102;
+    user-select: none;
+    margin-right: 2rem;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle a#login_button {
+    text-align: center;
+    padding-left: 0;
+    color: #7EAB3A;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle p#mobile_user_name {
+    text-align: center;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle > input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle span {
+    display: block;
+    width: 23px;
+    height: 2px;
+    margin-left: 13px;
+    margin-bottom: 4px;
+    position: relative;
+    background: #666666;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: left 0.5s cubic-bezier(0.77, 0.2, 0.05, 1) 0.2s;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-1px, 2px);
+    z-index: 999;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked ~ span:nth-last-child(3) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-2px, -3px);
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked ~ span:nth-last-child(4) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked ~ #menu {
+    left: -0.6rem;
+    width: 75vw;
+    height: 100vh;
+    top: -18px;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked {
+    z-index: 1000;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked ~ .overlay {
+    background: rgba(0, 0, 0, 0.68);
+    width: 103vw;
+    padding: 100%;
+    position: absolute;
+    top: -4.6rem;
+    left: 0;
+    height: 110vh;
+    margin-left: -18%;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked > input:checked ~ html {
+    overflow: hidden;
+  }
+  .component.page-header .container nav.mobile-navigation #menu {
+    font-family: "Poppins", sans-serif;
+    padding-top: 40px;
+    background: white;
+    border-right: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    position: absolute;
+    width: 20rem;
+    overflow: hidden;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    height: 100vh;
+    left: -30.5rem;
+    top: -1.1rem;
+    transition: left 0.2s cubic-bezier(0.77, 0.2, 0.05, 1) 0.2s;
+    z-index: 998;
+  }
+  .component.page-header .container nav.mobile-navigation #menu li {
+    font-size: 22px;
+    font-size: 22px;
+  }
+  .component.page-header .container nav.mobile-navigation #menu li .sub-menu li a {
+    color: #999999;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+  .component.page-header .container nav.mobile-navigation #menu li .sub-menu li:last-child {
+    padding-bottom: 6px;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li > .sub-menu {
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li {
+    position: relative;
+    padding: 5px 0;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li i {
+    color: #999999;
+    position: absolute;
+    right: 8%;
+    z-index: 3;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li i.angle-up {
+    display: none;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li i.angle-down {
+    display: inline-block;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li > input {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    height: 27px;
+    top: 5px;
+    left: 0;
+    z-index: 10;
+    border: none !important;
+    cursor: pointer;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li > input:checked ~ .sub-menu {
+    height: 100%;
+    max-height: 300px;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li > input:checked ~ .sub-menu > li {
+    background: rgba(242, 242, 242, 0.7);
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li > input:checked ~ i.angle-up {
+    display: inline-block;
+    color: #7EAB3A;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li > input:checked ~ i.angle-down {
+    display: none;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li > input:checked ~ .category {
+    color: #7EAB3A;
+    background: rgba(242, 242, 242, 0.7);
+  }
+  .component.page-header .container nav.mobile-navigation #menu li > a,
+.component.page-header .container nav.mobile-navigation #menu li > .category {
+    display: block;
+    position: relative;
+    width: inherit;
+    z-index: 2;
+    padding: 0 10px 0 40px;
+    color: #666666;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .component.page-header .container nav.mobile-navigation #menu > li > a,
+.component.page-header .container nav.mobile-navigation #menu > li > input ~ .category {
+    padding-left: 20px;
+  }
+  .component.page-header .container nav.mobile-navigation #menu-toggle > input:checked ~ ul {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+/***** icons *****/
+i{
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+}
+i.angle-up {
+    color: #d8d8d8;
+    padding-left: 3px;
+}
+i.angle-up:before {
+    content: "\f106";
+}
+i.angle-down{
+    color: #d8d8d8;
+    padding-left: 3px;
+}
+i.angle-down:before {
+    content: "\f107";
+}
+i.facebook, i.twitter, i.instagram{
+    color: #7b7474;
+}
+i.facebook:before{
+    content: "\f09a";
+}i.instagram:before{
+    content: "\f16d";
+}i.twitter:before{
+    content: "\f099";
+}
+i.facebook, i.instagram, i.twitter, i.user-gray, i.angle-down, i.angle-up{
+    font-style: normal;
+}
+i.user-gray {
+    color: #e2e2e2;
+    font-size: 25px;
+}
+i.user-gray:before {
+    content: "\f007";
 }
