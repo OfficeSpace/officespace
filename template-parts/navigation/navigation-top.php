@@ -75,8 +75,8 @@
             <a href="<?php echo home_url(); ?>/pages/faq">Help</a>
           </li>
           <li>
-            <a href="tel:18005063544" id="phone_number">
-              800-506-3544
+            <a href="tel:18005603544" id="phone_number">
+              800-560-3544
             </a>
           </li>
         </ul>
