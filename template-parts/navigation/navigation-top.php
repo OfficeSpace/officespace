@@ -75,8 +75,8 @@
             <a href="<?php echo home_url(); ?>/pages/faq">Help</a>
           </li>
           <li>
-            <a href="tel:18005603544" id="phone_number">
-              800-560-3544
+            <a href="tel:12066734787" id="phone_number">
+              206-673-4787
             </a>
           </li>
         </ul>
@@ -89,7 +89,7 @@
     </div>
     <div class="top-menu-holder">
       <ul class="primary-navigation" data-hide-until-document-ready="true" itemscope="" itemtype="http://schema.org/SiteNavigationElement" style="visibility: inherit;">
-        <li><a href="tel:18005063544" id="phone_number">800-506-3544</a></li>
+        <li><a href="tel:12066734787" id="phone_number">206-673-4787</a></li>
         <li id="search_li">
           <a href="/wa/seattle" id="search">Search</a>
         </li><li class="manage dropdown last">
